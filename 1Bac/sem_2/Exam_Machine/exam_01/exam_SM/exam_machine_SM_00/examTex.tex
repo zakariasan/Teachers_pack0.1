@@ -1,0 +1,148 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7.5in, 10in}]{geometry}
+%\usepackage{array}
+
+\usepackage[siunitx, RPvoltages]{circuitikz}
+\usepackage{graphicx, subfig, wrapfig, fancyhdr, lastpage, multicol ,color}
+\newcommand\headerMe[2]{\noindent{}#1\hfill#2}
+\usepackage[mathscr]{euscript}
+
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{blue}}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\cfoot{\em{Page \thepage \hspace{1pt} / \pageref{LastPage}}}
+\begin{document}
+
+\headerMe{Royaume du Maroc}{année scolaire \emph{2021-2022}}\\
+\headerMe{Ministère de l'Éducation nationale, }{  Professeur :\emph{Zakaria Haouzan}}\\
+\headerMe{du Préscolaire et des Sports}{Établissement : \emph{Lycée SKHOR qualifiant}}\\
+
+\begin{center}
+Devoir Surveillé  N°2 \\
+    Filière 1Bac Sciences Mathématiques \\
+Durée 2h00
+\\
+    \vspace{.2cm}
+\hrulefill
+\Large{Chimie 7pts/42min}
+\hrulefill\\
+
+    %\emph{Les questions parties sont indépendantes}
+\end{center}
+%end Headerss------------------------
+%__________________Chimie ______________________-
+%%%%%%%+_+_+_+_+_+_+_+_+_Partie1
+
+ \section*{Partie 1 :Grenaille Métallique de Zinc \dotfill(3.5pts) }
+Une grenaille métallique de zinc de masse $m=0,56g$ réagit avec une solution d'acide chlorhydrique de
+concentration C=5mol/L.
+\begin{enumerate}
+
+  \item  Ecrire les formules des couples mis en jeux. et les demi équations correspondantes. \dotfill(0.5pt)
+
+  \item Etablir l'équation de la réaction d'oxydoréduction. \dotfill(0.25pt)
+
+
+  \item Quel est le volume nécessaire de la solution d'acide chlorhydrique pour faire disparaitre complètement la
+    grenaille de zinc? \dotfill(1.25pt)
+
+  \item Quel est le gaz formé au cours de cette transformation?\dotfill(0.5pt)
+
+  \item  Quel est le volume du gaz dégagé à la fin de la réaction , sachant que le volume molaire $V_M=25L/mol$\dotfill(1pt)
+\end{enumerate}
+
+\section*{Partie 2 : L’eau de javel \dotfill(3.5pts) }
+
+L’eau de javel est une solution aqueuse d’hypochlorite de sodium de formule $(Na^+_{(aq)} + ClO^-_{(aq)} )$.
+La formule chimique d’une solution aqueuse d’acide chlorhydrique $(H_3O^+,Cl^-)$
+\begin{enumerate}
+  \item Écrire les demi-équations électroniques des deux couples suivants : $ClO^-/Cl_2$ et $Cl_2 /Cl^-$. \dotfill(0.5pt)
+    
+  \item  Écrire l’équation de la réaction entre les ions chlorure et hypochlorite. \dotfill(1pt)
+  
+  \item Soit $250mL$ d’eau de Javel contenant une quantité de matière d’ions hypochlorite $n(ClO^-)=0,41mol$ a été mélangée avec un détartrant à base d’acide chlorhydrique dans une pièce de volume $V=3,5 m^3$ .
+    \begin{enumerate}
+ \item Établir le tableau d’avancement relatif à la transformation chimique précédente. On considèrera que les ions $H^+_{(aq)}$ et $Cl^-_{(aq)}$ ont été introduits en excès. \dotfill(0.75pt)
+
+ \item Calculer la quantité de matière $n$ du gaz toxique produite. \dotfill(0.75pt)
+ \item En déduire le volume V de gaz toxique dégagé à 20°C et à pression atmosphérique normale. \dotfill(0.5pt)
+   \end{enumerate}
+\end{enumerate}
+
+ %_____________________________________PHYSIque Partie 22222____________________________________________________________________________
+\begin{center}
+    %\vspace{2cm}
+\hrulefill
+\Large{Physique 13pts - 78min}
+\hrulefill\\
+    \emph{Les parties sont indépendantes}
+\end{center}
+%end Headerss------------------------
+ \section*{Partie 1 :  Comportement globale d’un circuit électrique\dotfill(6pts)}
+ On dispose d’un circuit électrique comprenant, un générateur linéaire de caractéristique $(E = 12V , r = 1\Omega )$, un conducteur ohmique de résistance $R = 10\Omega$ et un électrolyseur $(E' = 4V, r')$.L’ensemble des dipôles est en série.
+\begin{enumerate}
+  \item Schématiser le circuit en y incluant un ampèremètre mesurant l’intensité qui traverse le conducteur
+    ohmique et un voltmètre qui mesure la tension aux bornes de l’électrolyseur.\dotfill(1pt)
+  \item L’intensité de courant ne varie pas au cours de l’expérience et a une valeur de 500mA pour une
+    durée de fonctionnement de 12 minutes.
+    \begin{enumerate}
+      \item En déduire l’énergie dissipée par effet joule par le conducteur ohmique.\dotfill(1pt)
+      \item Calculer la résistance interne r' de l’électrolyseur à l’aide de l’intensité de courant I.\dotfill(1pt)
+    \end{enumerate}
+    \item On a changé le conducteur ohmique par un nouveau conducteur ohmique. On a maintenant une intensité de 0,35 A qui traverse le circuit.
+    \begin{enumerate}
+      \item Calculer la valeur de l’énergie totale produite par le générateur en 20 minutes.\dotfill(1pt)
+      \item Calculer la valeur de l’énergie électrique fournie au circuit par le générateur en 20 minutes.\dotfill(1pt)
+        \item Calculer la nouvelle résistance du nouveau conducteur ohmique et en déduire l’énergie dissipée
+          par effet joule par l’ensemble des dipôles récepteurs de ce circuit.\dotfill(1pt)
+    \end{enumerate}
+\end{enumerate}
+
+ \section*{Partie 2 : Bilan énergétique \dotfill(7pts)}
+
+   \begin{wrapfigure}[6]{r}{0.3\textwidth}
+      \vspace{-1.5cm}
+      \begin{center}
+   \begin{circuitikz}[european, voltage shift=0.5]
+    \draw (0,0)
+    to[american voltage source,  i=$I_0$, v=$U_0$] (0,3)
+    to[short] (1,3)
+    to[R=$R_{Shunt}$, i=$I_0$, v=$U_S$] (3,3)
+    to[short, -o] (4,3);
+    \draw (0,0) to[short, -o] (4,0);
+    \draw [dashed, gray] (4,3) to [Telmech=M,n=motor] ++(0,-3);
+  \end{circuitikz}
+  \end{center}
+\end{wrapfigure}
+   On considère le montage suivant constitué :
+\\-d’Un générateur de force électromotrice E et de résistance interne r et un intérrupteur .
+\\-d’un moteur de force électromotrice E’=2,4V et de résistance interne $r'=2\Omega$ et d’un fil inextensible enroulé sur la poulie du moteur et auquel est suspendu à l’autre extrémité un corps de masse m=50g.
+\\-d’un conducteur ohmique de résistance $R=30\Omega$.
+
+On ferme l’intérrupteur et il passe dans le circuit un courant électrique d’intensité I=0,1A.
+ \begin{enumerate} 
+   \item  Déterminer la puissane $P_J$ déssipée par effet joule dans l’ensemble : ( le conduceur ohmique + le moteur).\dotfill(1pt)
+
+    \item  Calculer la puissance utile du moteur électrique.\dotfill(1pt)
+
+    \item  En déduire la puissance $P_e$ fournie par le générateur au reste du circuit.\dotfill(1pt)
+
+    \item  Sachant que la puissance totale déssipée dans tout le circuit par effet joule est égale à  0,36W .
+      \begin{enumerate}
+        \item  Déteminer la valeur de la puissance déssipée par effet joule dans le moteur.\dotfill(1pt)
+
+        \item  En déduire la valeur de la résistance du générateur.\dotfill(1pt)
+          \end{enumerate}
+\item Déterminer la valeur de la force électromotrice du générateur puis retrouver l’intensité du courant en utilisant la loi de
+  pouillet.\dotfill(1pt)
+     \item  Sachant que l’énergie utile reçue par le moteur se transforme en énergie potentielle de pesanteur ce qui entraine la montée du corps S d’une distance h pendant une durée $\Delta{t} = 2s$.
+       \begin{enumerate}
+         \item Déterminer la valeur de h .on donne g=10N/kg.\dotfill(0.5pt)
+         \item Quelles sont les formes d’énergie qui ont été mis en évidence dans cette expérience\dotfill(0.5pt)
+       \end{enumerate}
+ \end{enumerate}
+\end{document}
