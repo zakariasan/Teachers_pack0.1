@@ -5,7 +5,9 @@
             wrapfig,
             xcolor, 
             enumerate,
-            amsmath,fontenc
+            amsmath,
+			fontenc,
+			tcolorbox
             }
 
 \newcommand\headerMe[2]{\noindent{}#1\hfill#2}
@@ -88,149 +90,92 @@ mécanique longitudinale. (Le ressort=milieu matériel unidimensionnel)
 \subsection{Les Ondes sonores :}
 \begin{figure}[h]
 		\begin{center}
-	\includegraphics[width=0.3\textwidth]{./img/OndeSonore.png}
+	\includegraphics[width=0.4\textwidth]{./img/OndeSonore.png}
+	\vspace{-0.5cm}
 	\caption{Onde mécanique longitudinale (onde sonore)}
 \end{center}
 \end{figure}
 \begin{itemize}
+	\vspace{-1.3cm}
 \item Le son est une onde mécanique longitudinale tridimensionnelle: sa propagation nécessite la présence d'un milieu materiel ( l'air par exemple mais aussi n'importe quel milieu gazeux, liquide ou solide.)
 \item Le son ne se propage pas dans le vide (absence de la matière)..
 \item La propagation du son est due à la compression et la dilatation des constituants du milieu de propagation.
 \end{itemize}
 
 \subsection{Vitesse de propagation d'une onde :}
-La vitesse de propagation d'une onde (nommée célérité) est égale à la distance parcourue au temps mis à la parcourir.
+\subsubsection{Définition : }
+\begin{tcolorbox}
+	
+	\textit{La vitesse de propagation d'une onde (nommée célérité) est égale à la distance parcourue au temps mis à la parcourir.$$v = \frac{d}{\Delta{t}}$$
+	Remarque:	La vitesse du son dépend du milieu de propagation.Elle est plus importante dans les solides et les liquides que dans l'air.}
 
+\end{tcolorbox}
+\subsubsection{Cas de propagation le long d'une corde : }
+La vitesse de propagation d'une onde le long d'une corde tendue est donnée par la relation suivante: $$ v = \sqrt{\frac{T}{\mu}}$$
 
+T: tension de la corde en (N).
+et $\mu$ : masse Linéaire de la corde en (Kg/m), avec $\mu = \frac{m}{L}$
 
+\subsubsection{Exemple d'application:}
+Une onde se propage le long d'une corde tendue de masse m=100g et de longueur l=8m et sa tension T=5N.
+\\1. Calculer la vitesse (célérité) de propagation de l'onde.
+\\2. Quelle est le temps mis par l'onde pour parcourir la corde toute entière ?
+\begin{wrapfigure}[4]{r}{0.3\textwidth}	
+			\includegraphics[width=0.3\textwidth]{./img/RetardCourbe.png}
+			\caption{Onde mécanique longitudinale}
+\end{wrapfigure}
+\section{Notion de retard temporaire :}
+\begin{itemize}	
+	\item Désignons par $u$ les valeurs du déplacement transversale provoqué par une onde se propageant le long d'une corde.
 
+	\item les graphiques du document 17 représentent la perturbation $u$ en fonction du temps en un point M de la corde, puis en un point M'.
 
+	\item la perturbation $u$ se propage à la vitesse $v$, elle affecte le point M' à partir de la date $t_D$ (D comme début de la perturbation), puis le point M' à partir la date $t_D+\tau$.
+\item $\tau$ désigne le retard du passage de la déformation en M', par rapport à M. On a $v = \frac{MM'}{\tau}$.
+\end{itemize}
+Remarque:
 
+\begin{tcolorbox}
+\begin{wrapfigure}[8]{r}{0.3\textwidth}	
+			\includegraphics[width=0.3\textwidth]{./img/eux ondes mécaniques se croisent.png}
+			\caption{deux ondes mécaniques }
+\end{wrapfigure}
+	La relation entre l'élongation d'un point M du milieu de propagation et celle de la source est : $$u_M(t) = u_S(t-\tau)$$ avec $\tau = \frac{SM}{v}$
 
+	Lorsque deux ondes mécaniques se croisent elles se superposent sans se perturber. (Leurs amplitudes s'ajoutent algébriquement)
+et après leur croisement chaque onde reprend sa forme propre et continue sa propagation avec sa même vitesse.
 
+\end{tcolorbox}
 
+\section{Exercice d’application 2:}
+Une onde mécanique est engendrée à la date $t=0s$, à l’extrémité d’une corde, elle se propage à une célérité $v = 5m.s^{-1}$
+
+Nous considérons les points M , N et P de la corde telles que: $SM=10m$, $SN=12m$, $SP=15m$.
+
+Sachant que la durée de perturbation est $\Delta{0.2s}$, décrire l’état de ces points à l’instant $t=2.5s$
 
 
 
 %wfg---------------------------------------------------------------sf 
-
-\section{ Quelques activités du physicien : }
-
-Le physicien observe et étudie les phénomènes naturels et universels tout en cherchant les lois qui les gouvernent.Il
-fait des recherches théoriques et expérimentales pour approfondir la connaissance des phénomènes étudiés et mettre
-au point de nouvelles méthodes et de nouveaux appareils en contribuant par ses recherches à l'évolution des sciences.
-
-\section{Les questions que se posent les physiciens: }
-Plusieurs questions peuvent se poser sur un physicien dans le but de comprendre le fonctionnement des phénomènes
-parmi lesquelles on peut citer:
-\begin{itemize}
-   \item Quelles sont les grandeurs qui permettent d'étudier l'évolution du système étudié ?
-   \item Quelles sont les paramètres extérieurs qui commandent cette évolution ?
-   \item L'évolution étudiée peut-elle être caractériser par un ou plusieurs temps caractéristique?
-   \item Quelle est le rôle des conditions initiales dans l'évolution du système étudié ?
-   \item L'évolution étudiée est elle lente, rapide, totale ou limitée , est elle uniforme ou variée? ....
-
-\end{itemize}
-
-      Ensuite le physicien invente des théories et des lois qui expliquent les phénomènes observés tout en se basant sur
-l'observation en passant par l'utilisation d'un modèle théorique ou expérimental avant d'extraire les résultats .
-
-Par exemple c'est l'observation de la chute d'une pomme (d’un pommier) qui a conduit Newton à la découverte de la
-lois d'attraction universelle.
-Newton à son époque s’est posé plusieurs questions :
-\begin{itemize}
-   \item Qui fait tomber la pomme de l’arbre vers le sol ?
-   \item Pourquoi la pomme ne s'éloigne de la terre à tout jamais.?
-   \item Pourquoi la Lune ne tombe-t-elle pas elle aussi?
-   \item la chute des corps et la révolution de la Lune autour de la terre, obéissent-elles à la même loi physique ?
-      \end{itemize}
-Ce qui a poussé Newton à découvrir la loi de gravitation universselle suivante:
-Tous les corps s'attirent proportionnellement au produit de leurs masses et inversement porportionnelle au carré de la
-distance qui les sépare.
-
-\section{Rappel de quelques notions acquis utilisées dans les mesures effectuées par le physicien:}
-
-\subsection{La longueur:}
-\subsubsection{Unité de mesure de la longueur: }
-L'unité de mesure de la longueur dans le système international est le mètre (m).
-Les multiples et les sous multiples du mètre: (tableau de conversion)
-
-\begin{center}
-   \begin{tabular}{ |c|c|c|c|c|c|c| }
-      \hline
-      km & hm & dam & \bf{m} & dm & cm & mm \\
-      \hline
-        &   &    &  &   &   & \\
-\hline
-\end{tabular}
-On place un seul nombre dans chaque case.
-\end{center}
-Exemple : 1m  =  100cm et 1cm = 0.01m = $10^{-2}$m
-
-\underline{Autres unités de longueur:}
-
-\begin{itemize}
-   \item Le micromètre symbole $\mu$. $1\mu = 10^{-6} m$
-   \item Le nonomètre symbole n. $1nm = 10^{-9} m$
-   \item Le picomètre symbole p. $1pm = 10^{-12} m$
-   \item -L’année lumière al : La distance parcourue par la lumière en une année.\\ $1al = c.\Delta{t} = 3.10^{8}.(365.25 . 24. 3600)= 9.5 10^{15}m$
-\end{itemize}
-
-\subsubsection{`Exemples de quelques longueurs :` Le périmètre d’un cercle de rayon R : $P = 2\pi.R$}
-
-\section{La surface:}
-\subsection{Unité de mesure de la surface: }
-L'unité de mesure de la surface dans le système international est le mètre carré $(m^2)$.
-Les multiples et les sous multiples du mètre carré: (tableau de conversion)
-
-\begin{center}
-   \begin{tabular}{ |c|c|c|c|c|c|c| }
-      \hline
-      $km^2$ & $hm^2$ & $dam^2$ & \bf{$m^2$} & $dm^2$ & $cm^2$ & $mm^2$ \\
-      \hline
-        &   &    &  &   &   & \\
-\hline
-\end{tabular}
-\end{center}
-Exemple : $1m^2 = 10^4 cm^2$ et $1cm^2 = 0.0001m^2 = 10^{-4} m^2$
-
-
-\subsection{Exemples de quelques sufaces:}
-\begin{itemize}
-   \item Surface d’un disque de rayon R: $S = \pi.R^2$
-   \item Surface d’un rectangle S=a.b avec a: longeur , b :largeur
-   \item -Surface d’un cylindre de rayon R et de hauteur h: (deux fois la surface de base + la surface latérale) $S = 2\pi.R^2 + 2\pi.R.h$
-\end{itemize}
-\section{volume:}
-L'unité de mesure du volume dans le système international est le mètre cube (m3).
-Les multiples et les sous multiples du mètre cube: (tableau de conversion)
-\begin{center}
-   \begin{tabular}{ |c|c|c|c|c|c|c| }
-      \hline
-      $km^3$ & $hm^3$ & $dam^3$ & \bf{$m^3$} & $dm^3$ & $cm^3$ & $mm^3$ \\
-      \hline
-        &   &    &  &   &   & \\
-\hline
-\end{tabular}
-   \begin{tabular}{ |c|c|c|c|c|c| }
-      \hline
-       $hL$ & $daL$ & \bf{$L$} & $dL$ & $cL$ & $mL$ \\
-      \hline
-        &   &    &  &   &    \\
-\hline
-\end{tabular}
-\end{center}
-
-Exemple : $1m^3 = 10^6 cm^3$ et $1cm^3 =  10^{-6} m^3$
-
-Remarque: Pour mesurer le volume des liquides on utlise souvent le litre symbolisé par (L)
-Les multiples et les sous multiples du litre: (tableau de conversion)
-\begin{center}
-
-\end{center}
-
-Exemple : $1m^3 = 10^3 $L et $1L =  1000 mL$ 
-
+%\begin{center}
+   %\begin{tabular}{ |c|c|c|c|c|c|c| }
+      %\hline
+      %km & hm & dam & \bf{m} & dm & cm & mm \\
+      %\hline
+        %&   &    &  &   &   & \\
+%\hline
+%\end{tabular}
+%On place un seul nombre dans chaque case.
+%\end{center}
+%\begin{center}
+   %\begin{tabular}{ |c|c|c|c|c|c|c| }
+      %\hline
+      %$km^2$ & $hm^2$ & $dam^2$ & \bf{$m^2$} & $dm^2$ & $cm^2$ & $mm^2$ \\
+      %\hline
+        %&   &    &  &   &   & \\
+%\hline
+%\end{tabular}
+%\end{center}
 
 
 \end{document}
