@@ -475,6 +475,12 @@ La période propre du pendule élastique est : $T_0  = \frac{2.\pi}{\omega_0} = 
 \subsection{LE PENDULE DE TORSION:}
 
 \subsubsection{Moment du couple de torsion:}
+\begin{wrapfigure}{r}{0.3\textwidth}
+	\vspace{-2cm}
+	\includegraphics[width=0.3\textwidth]{./torsion02.png}
+\end{wrapfigure}
+
+
 Le pendule de torsion est constitué d'un fil de torsion, et d'une tige homogène horizontale fixée en son milieu à l'éxtrémités de ce
 fil. L'orsqu'on écarte la tige de sa position d'équilibre et on la libère, elle se met à osciller autour de sa position d'équilibre.
 
@@ -520,6 +526,13 @@ La solution de cette équation différentielle est une fonction sinusoidale qui 
   La période propre du pendule de torsion : $T_0  = \frac{2.\pi}{\omega_0} = 2.\pi.\sqrt{\frac{J_{\Delta}}{C}}$
 
   \begin{tcolorbox}
+\begin{wrapfigure}{r}{0.3\textwidth}
+	\vspace{-2cm}
+	\includegraphics[width=0.3\textwidth]{./torsion01.png}
+	\includegraphics[width=0.3\textwidth]{./torsion00.png}
+\end{wrapfigure}
+
+
 Remarque : si la tige du pendule de torsion porte deux masselottes équivalentes ayant la même masse
 
 Dans ce cas le moment d'inertie de l'ensemble est $J_{\Delta}'  = J_{\Delta} + 2.m.d^2$
@@ -531,6 +544,42 @@ et pour coefficient directeur $\alpha = \frac{\Delta{T_0}}{\Delta{d^2}} = \frac{
   \end{tcolorbox}
 
   \subsection{LE PENDULE PESANT:}
+
+
+\begin{wrapfigure}{r}{0.3\textwidth}
+
+	\begin{tikzpicture}[scale=1] 
+	\fill [gray,opacity=0.4] (0,-0.5) rectangle (3,-0.35);
+	\draw (1.47,-0.35) rectangle (1.53,4);
+	
+	\draw [->] (1.52,2.5) arc (-90:-45:0.7); 
+	\node at (1.85,2.3) {$\theta$}; 
+	
+	
+	%repère cartésien                                               
+	\node at (1.2,3.9) {O};
+	\draw [->,-stealth,thick] (0.5,3.6) --++ (3,0) node [above] {y};
+	\draw [->,-latex,thick] (1.5,3.6) --++ (0.75,0) node [below] {$\overrightarrow{u_y}$};
+	\draw [->,-stealth,thick] (1.5,4) --++ (0,-5) node [right] {x};
+	\draw [->,-latex,thick] (1.5,3.6) --++ (0,-0.75) node [left] {$\overrightarrow{u_x}$};		              
+	%fin
+
+	\draw node at (2.5,2.3) {$L$}; 
+
+	%\filldraw [black] (1.5,3.6) circle (0.08cm);
+	\draw [black ,line width=0.1cm] (1.5,3.6) -- (3,1);
+	%\draw [color=white,ball color=gray,smooth] (3,1) circle (0.2); 
+	\node at (2.5,0.75) {\scriptsize{M}} ;
+ 
+	
+	
+	 \draw [dashed] (3,1)--++(0,2.6);                                               
+	 \draw [dashed] (3,1)--++(-1.5,0); 
+	\label{pendule_base_polaire}	                                              
+	\end{tikzpicture}
+\end{wrapfigure}
+
+
   \subsubsection{Equation différentielle du mouvement: }
 On écarte le pendule pesant de sa position d'équilibre et on le libère sans vitesse initiale . Appelons $\theta$ l'angle que forme OG avec la ligne verticale passant par O.(voir figure).
 
@@ -556,6 +605,50 @@ La période propre du pendule pesant dans le cas des petites oscillations $T_0 =
 donc $T_0 = 2.\pi.\sqrt{\frac{J_{\Delta}}{m.g.d}}$
 
 \subsection{LE PENDULE SIMPLE: }
+\begin{wrapfigure}{r}{0.3\textwidth}
+
+
+\begin{tikzpicture}[scale=1] 
+% \node[,inner sep=0] at (0.75,4.05) {\includegraphics[scale=0.2]{capitaine.pdf}}; 
+	\fill [gray,opacity=0.4] (0,-0.5) rectangle (3,-0.35);
+	\draw (1.47,-0.35) rectangle (1.53,4);
+	% \filldraw [gray,opacity=0.4] (1,3.5) arc (-180:0:0.5);
+	% \draw [gray]  (1,3.5) -- (2,3.5);      
+	
+	\draw [->] (1.52,2.5) arc (-90:-45:0.7); 
+	\node at (1.85,2.3) {$\theta$}; 
+	
+	
+	%repère cartésien                                               
+	\node at (1.2,3.9) {O};
+	\draw [->,-stealth,thick] (0.5,3.6) --++ (3,0) node [above] {y};
+	\draw [->,-latex,thick] (1.5,3.6) --++ (0.75,0) node [below] {$\overrightarrow{u_y}$};
+	\draw [->,-stealth,thick] (1.5,4) --++ (0,-5) node [right] {x};
+	\draw [->,-latex,thick] (1.5,3.6) --++ (0,-0.75) node [left] {$\overrightarrow{u_x}$};		              
+	%fin
+
+	\draw node at (2.5,2.3) {$r$}; 
+
+	\filldraw [black] (1.5,3.6) circle (0.08cm);
+	\draw [black] (1.5,3.6) -- (3,1);
+	\draw [color=white,ball color=gray,smooth] (3,1) circle (0.2); 
+	\node at (2.5,0.75) {\scriptsize{M}} ;
+	% \draw [blue,->,-latex] (3,1) -- (3,0.2) node [left] {$\overrightarrow{P}$};
+	% \draw [red,->,-latex] (2.9,1.17) -- (2.48,1.9) node [right] {$\overrightarrow{T}$};    
+ 
+	 \draw [-latex, thick, blue] (3,1) --++ (-59:1) node [right] {$\overrightarrow{u_r}$};  
+	
+	 \draw [-latex,thick,blue] (3,1) --++ (31:1) node [right] {$\overrightarrow{u_{\theta}}$};   
+	
+	% \draw [dashed] (3,1)--++(0,2.6);                                               
+	% \draw [dashed] (3,1)--++(-1.5,0); 
+	\label{pendule_base_polaire}	                                              
+	\end{tikzpicture}
+
+
+
+\end{wrapfigure}
+
 Lorsqu'on l'écarte de sa position d'équilibre et on le lache sans vitesse initiale , il oscille autour de sa position d'équibre. 
 
 Bilan des forces qui s'éxercent sur le corps :
@@ -590,6 +683,9 @@ s'appelle : l'excitateur qui est un système ayant un mouvement oscillatoire qui
 
 \subsection{Exemple d'oscillations forcées : }
 
+\begin{center}
+	\includegraphics[width=0.7\textwidth]{./excitatio.png}
+\end{center}
 
 
 
@@ -597,6 +693,13 @@ Dans cet exemple le pendule joue le rôle du résonateur, sa fréquence propre e
 l’excitateur sa fréquence est Ne.
 En liant l’oscillateur mécanique avec le moteur , il s'oblige d'osciller avec une fréquence égale à celle moteur.
 En faisant varier la fréquence du moteur on obtient le plus grand amplitude du résonateur lorsque la fréquence du moteur (excitateur) est égale à,la fréquence propre du pendule élastique (résonateur) ,on dit qu’il y’a résonance
+
+
+\begin{center}
+
+	\includegraphics[width=0.5\textwidth]{./excitation.png}
+\end{center}
+
 %\begin{center}
 
 	%\includegraphics[width=0.6\textwidth]{./img_02.png}
