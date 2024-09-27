@@ -1,0 +1,531 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7.5in, 11in}]{geometry}
+%\usepackage{array}
+\usepackage{graphicx, subfig, wrapfig, fancyhdr, lastpage, multicol ,color,arydshln,makecell,chemfig}
+\usepackage[most]{tcolorbox}
+\newcommand\headerMe[2]{\noindent{}#1\hfill#2}
+\usepackage[mathscr]{euscript}
+\usepackage{tabularray}
+
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{blue}}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\cfoot{ \vspace{-0.8cm}\em{Page \thepage \hspace{1pt} / \pageref{LastPage}}}
+
+
+\newtcolorbox{Box2}[2][
+enhanced, 
+    breakable,
+]{
+                lower separated=false,
+                colback=white,
+colframe=white!20!black,fonttitle=\bfseries,
+colbacktitle=white!30!gray,
+coltitle=black,
+enhanced,
+attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
+title=#2,#1
+}
+%    \vspace{.2cm}
+
+
+
+\begin{document}
+
+\headerMe{Royaume du Maroc}{année scolaire \emph{2023-2024}}\\
+\headerMe{Ministère de l'Éducation nationale, }{  }\\
+\headerMe{du Préscolaire et des Sports}{Établissement : \emph{Lycée SKHOR qualifiant}}\\
+%\vspace{-1cm}
+\begin{center}
+%Devoir Surveillé  N°1 \\
+	Soutien\\
+    2ème année baccalauréat Sciences Mathématiques\\
+%Durée 2h00
+%    \vspace{.2cm}
+\hrulefill
+  \Large{--Chimie(SN2023)--}
+\hrulefill\\
+
+    \emph{Les  parties sont indépendantes}
+    %\emph{Les deux parties sont indépendantes}
+
+    \vspace{-.2cm}
+\end{center}
+%end Headerss------------------------
+%__________________Chimie ______________________-
+%%%%%%%+_+_+_+_+_+_+_+_+_Partie1
+\begin{Box2}{SN2023:Verification de la masse }
+ \emph{ \textbf{L’acide propanoïque $C_2H_5COOH$ est un liquide que l’on prépare au laboratoire. Il est utilisé comme
+agent conservateur et entre dans la composition de certains médicaments et dans la synthèse de certains
+arômes. Cette partie consiste à vérifier, par dosage,}} la masse de l’acide propanoïque dans un médicament.
+
+\textbf{Données :}
+\begin{itemize}
+  \item Le produit ionique de l’eau: $K_e = 10.^{-14}$ à 25°C.
+  \item La masse molaire de l’acide propanoïque $M(C_2H_5COOH) = 74 g/mol$.
+\end{itemize}
+
+Le médicament étudié est une solution aqueuse notée $(S)$ . Son étiquette descriptive indique la présence de $46,2mg$
+d’acide propanoïque dans un volume $V = 40mL$de cette solution.
+
+Pour vérifier cette indication, on prépare, à 25°C, une solution A $(S)$ en introduisant dans un bécher un
+volume $V_A = 10mL$ de la solution (S) auquel on ajoute $V_e =  50mL$ d’eau distillée.
+
+On dose l’acide propanoïque présent dans $(S_A)$ à l’aide d’une solution aqueuse $(S_B)$ d’hydroxyde de sodium $({N_a^+}_{(aq)} + HO^-_{(aq)}  )$ de concentration molaire $C_B = 2,0.10^{-2}mol/L$.
+
+Après l’ajout d’un volume $V_{B_1}= 3,9mL$ de la solution d’hydroxyde de sodium au mélange, la mesure 
+du pH du mélange réactionnel donne la valeur $pH_1 = 4,86$
+
+A l’équivalence, le volume de la solution d’hydroxyde de sodium ajouté est $V_{BE} = 7,8mL$
+
+\begin{tabular}{c|l}
+0,25	& \makecell[l]{\textbf{1. }Ecrire l’équation modélisant la réaction qui a lieu lors du dosage. }\\ 
+
+	0,5 & \makecell[l]{\textbf{2. }Expliquer pourquoi l’ajout du volume $V_e$ d’eau distillée n’influe pas sur la valeur du volume \\de la solution d’hydroxyde de sodium ajouté à l’équivalence. }\\
+
+	0,75 & \makecell[l]{\textbf{3. }En se basant sur le tableau d’avancement de la réaction du dosage, trouver l’expression du \\ taux d’avancement final de la réaction avant l’équivalence en fonction du pH du milieu\\réactionnel, $K_e$ ,$C_B$,$V_A$ ,$V_e$ et $V_B$.le volume de la solution d’hydroxyde de sodium ajouté.\\Calculer sa valeur après l’ajout de $V_{B1}$ et conclure. }\\
+
+  0,75 & \makecell[l]{\textbf{4. }Calculer, après l’ajout du volume $V_B =V_{B_1}$ , les concentrations  $[C_2H_5COOH]$ et $[C_2H_5COO^-]$ \\Déduire la valeur du $pK_A(C_2H_5COOH/C_2H_5COO^-)$.  } \\
+
+  0,5 & \makecell[l]{\textbf{5. }Justifier la nature basique du mélange réactionnel à l’équivalence. } \\
+  
+  0,75 & \makecell[l]{\textbf{6. }Calculer le pH de la solution (S).} \\
+  0,5 & \makecell[l]{\textbf{7. }Vérifier que la masse de l’acide propanoïque est celle indiquée sur l’étiquette. } \\
+
+
+\end{tabular}
+\end{Box2}
+
+\begin{Box2}{SN2020:Dosage de l’acide lactique dans un lait.}
+  \emph{L’acidité d’un lait augmente par fermentation lactique en cas de mauvaise conservation. Le dosage de
+l’acide lactique de formule $CH_3-CHOH-COOH$ permet donc d’apprécier l’état de conservation du lait.
+Moins le lait est frais, plus il contient de l’acide lactique.}
+  
+On se propose de doser l’acide lactique présent dans un lait de vache, qui n’a subit aucun traitement, par une
+solution aqueuse d’hydroxyde de sodium. On supposera que l’acidité du lait est due uniquement à l’acide
+lactique.
+
+L’acide lactique sera simplement noté HA.
+  \textbf{Données : }
+\begin{itemize}
+  \item Toutes les mesures sont effectuées à $25^{\circ}C$
+  \item Le produit ionique de l’eau: $K_e = 10.^{-14}$ à 25°C.
+  \item La masse molaire de l’acide lactique :$90 g/mol$.
+ 
+\end{itemize}
+
+  \textbf{1- Préparation de la solution aqueuse d’hydroxyde de sodium :}
+  On prépare une solution aqueuse $(S_B )$ d’hydroxyde de sodium $(Na^+_{(aq)} + HO^-_{(aq)})$ de volume $V=1,0L$ et de concentration molaire $C_B$, par dissolution d'une masse de soude dans de l'eau distillée.
+
+  la mesure du pH de la solution $S_B$ donne $pH = 12,70$.
+
+\begin{enumerate}
+  \item[1-1] Etablir l’expression du pH de la solution $(S_B)$ en fonction de $K_e$ et de $C_B$.\textbf{(0,5pt)}
+  \item[1-2] Vérifier que $C_B \simeq 5,0. 10^{-2} mol/L$.\textbf{(0,25pt)}
+\end{enumerate}
+
+  \textbf{2-Contrôle de la qualité d’un lait de vache}
+
+  \begin{wrapfigure}[10]{r}{0.44\textwidth}
+  \begin{center}
+	  \vspace{-2cm}
+	\includegraphics[width=0.5\textwidth]{./img/new_vache.png}
+  \end{center}
+\end{wrapfigure}
+
+
+
+  Un technicien de laboratoire dose l’acidité d’un lait de vache. Il réalise le titrage pH-métrique à l’aide de la
+  solution aqueuse $(S_B)$ d’hydroxyde de sodium de concentration molaire $C_B$. Pour cela il introduit , dans un
+bécher un volume $V_A = 25,0mL$
+de lait, puis il verse progressivement un volume $V_B$
+de la solution $(S_B)$ et note
+pour chaque volume versé le pH du mélange réactionnel.
+
+On note $V_{BE}$
+le volume de la solution d’hydroxyde de sodium versé à l’équivalence et
+  $K_A$ la constante d’acidité du couple $HA_{(aq)}/ A^-_{(aq)}$.
+
+  \begin{enumerate}
+    \item[2-1] Ecrire l’équation chimique modélisant la réaction du dosage. (0,5pt)
+    \item[2-2] Etablir la relation permettant de déterminer la concentration $C_A$ en acide lactique du lait en fonction de $V_A, C_B$ et $V_BE$.(0,5pt)
+    \item[2-3] Etablir la relation : $V_B.10^{-pH} = K_A.(V_{BE} - V_B)$ avec $0<V_B<V_{BE}$.(0,75pt)
+    \item[2-4] La courbe de la figure 1 représente les variations de $10^{-pH}$ en fonction de $V_B$ : $10^{-pH}.V_B$=$ f(V_B)$.En s’aidant de la courbe de la figure 1.
+      \begin{enumerate}
+        \item[2-4-1] Déterminer le volume $V_{BE}$ et en déduire la concentration $C_A$.(0.5pt)
+        \item[2-4-2] déterminer le $pK_A$ du couple $HA_{(aq)}/ A^-_{(aq)}$ (0.5pt)
+      \end{enumerate}
+  \end{enumerate}
+
+
+\end{Box2}
+
+ \section*{Partie 2 : Etude de la pile plomb–étain}
+ Les piles électrochimiques sont l’une des applications des réactions d’oxydo-réduction. Au cours de leur
+fonctionnements, une partie de l’énergie chimique se transforme en énergie électrique.
+
+On réalise, à 25 $^{\circ}C$ , la pile plomb–étain en plongeant une plaque de plomb dans un bécher contenant un 
+volume $V_1 $=$30mL$ d’une solution aqueuse de nitrate de plomb $({Pb^{2+}}_{(aq)} + {2NO_3^-}_{(aq)} )$
+de concentration molaire initiale $C_1$=$[Pb^{2+}]_0$ 
+
+
+et en plongeant une plaque d’étain dans un autre bécher contenant un volume $V_2=V_1$ d’une solution aqueuse de chlorure d’étain II $(Sn^{2+}_{aq} + 2Cl^-_{(aq)})$
+de concentration molaire initiale $C_2 $=$[Sn^{2+}]_0$=$C_1$ . 
+
+Les deux solutions sont reliées par un pont salin contenant une solution saturée de chlorure d’ammonium $NH^+_{4(aq)} + Cl^-_{(aq)}$
+
+On monte en série entre les pôles de la pile, un conducteur ohmique (D) , un ampèremètre et un interrupteur
+
+On ferme l’interrupteur à l’instant $t = 0$, un courant d’intensité $I = 17,13mA$ circule alors dans le circuit.
+
+La courbe ci-contre représente l’évolution temporelle de la concentration des ions $Sn^{2+}_{(aq)}$.
+
+\textbf{Donnée : }
+
+ \begin{itemize}
+	 \item un Volume $V_A = 8,6mL$ d'acide éthanoique (de formule chimique $C_2H_4O_2$ et de densité par rapport à l'eau d=1,05).
+	 \item un Volume $V_B =13,8mL$ de l'alcool iso-amylique de formule $C_5H_12O$ (soit 0,15mol).
+	 %\item $\chemfig{CH_3-C(=[::+60]O)(-[::-60]O-CH_2-CH_2-C(-[2]CH_3)-CH_3}$
+	 \item (\textbf{l'acétate d'iso-amyle})  $\chemfig{CH_3-C(=[::+60]O)(-[::-60]O-CH_2-CH_2-CH(-[2]CH_3)-CH_3)}$
+
+ \end{itemize}
+
+ On donne  : $M(H)=1g/mol$ ; $M(C)=12g/mol$ ; $M(O)=16g/mol$ et $\rho_{eau} = 1g/mol$
+
+\begin{tabular}{c|l}
+0,75	& \makecell[l]{\textbf{1. }Montrer que le mélange initial (acide + alcool) est équimolaire.}\\ 
+	0,5 & \makecell[l]{\textbf{2.a. }Citer les trois principales propriétés de cette réaction.}\\
+
+	1 & \makecell[l]{\textbf{2.c. }Déterminer la quantité maximale d'acétate d'iso-amyle que peut synthétiser ce chimiste \\sachant que la constante d'équilibre de la réaction de synthèse de l'ester est égale à 4.}\\
+
+	0,75 & \makecell[l]{\textbf{3. }Afin d'améliorer le rendement de cette réaction, le chimiste pense aux opérations suivantes: \\
+		\textbf{ - ajouter un catalyseur : l'acide sulfurique concentré par exemple}\\
+	\textbf{- réaliser une distillation fractionnée consistant à éliminer progressivement} l'eau formée.
+Parmi ces deux propositions , choisir en justifiant celle qui vous semble raisonnable.}\\
+
+
+		0,5 & \makecell[l]{\textbf{3. } Le chimiste a réaliser une autre expérience en remplaçant l'acide éthanoique par son \\anhydride. Ecrire l'équation de la réaction qui se produit.}\\
+\end{tabular}
+
+
+\begin{center}
+%Devoir Surveillé  N°1 \\
+%Durée 2h00
+    %\vspace{.2cm}
+\hrulefill
+\Large{--Physique (13 points)--}
+\hrulefill\\
+
+    \emph{Les  parties sont indépendantes}
+    %\emph{Les deux parties sont indépendantes}
+\end{center}
+
+
+ \section*{Partie 1: Application des ondes ultrasonores\dotfill (2,5 POINTS)  }
+
+ \begin{tcolorbox}
+ \emph{Actuellement certaines voitures sont équipées de plusieurs capteurs tels que les capteurs ultrasons
+et les capteurs LASER. Ces capteurs servent à faciliter le contrôle de son environnement proche
+qui peut atteindre une distance de 2m.}
+
+\emph{Le tableau de bord de ces nouvelles gammes de voitures est très développé, il est constitué d'un
+ensemble d'indicateurs et de témoins qui renseignent le conducteur sur le fonctionnement du
+moteur et sur les paramètres de conduite (vitesse instantanée, température extérieure ...). Certains
+circuits électroniques du tableau de bord comportent des condensateurs, des bobines ... Le confort
+dans ces voitures est assuré par plusieurs éléments et accessoires parmi lesquels, les amortisseurs
+qui utilisent des ressorts.}
+\end{tcolorbox}
+
+
+\begin{wrapfigure}{r}{0.25\textwidth}
+  \begin{center}
+	  \vspace{-1cm}
+	\includegraphics[width=0.25\textwidth]{./img/ondes01.png}
+  \end{center}
+\end{wrapfigure}
+
+Une voiture est équipée d’un système comportant un émetteur (E) et un récepteur (R) d’ultrasons
+placés côte à côte à l’arrière du véhicule.
+
+Lors d'un stationnement, l'émetteur (E) envoie des ultrasons sous forme de salves. Ces ultrasons sont
+captés par le récepteur (R) après réflexion sur un obstacle situé à la distance d de (E).
+
+\textbf{Données : }Vitesse de propagation des ultrasons dans l’air : $v_0$=$340 m.s^{-1}$.
+
+\begin{tabular}{c|l}
+	1  & \makecell[l]{\textbf{1. }Répondre par vrai ou faux aux propositions a, b, c et d suivantes: }\\
+\end{tabular}
+
+\begin{center}
+	\begin{tabular}{|c|l|}
+ a & L'onde ultrasonore est une onde longitudinale \\
+ b & L'onde ultrasonore se propage dans le vide \\  
+ c & La propagation des ultrasons se fait avec transport de matière \\
+ d & La fréquence des ultrasons varie en changeant le milieu de propagation \\  
+\end{tabular}
+\end{center}
+
+
+\begin{tabular}{c|l}
+	& \makecell[l]{\textbf{2. }L'oscillogramme ci-contre donne le signal émis par l'émetteur (E)
+et le signal réfléchi par \\le récepteur (R).
+ }\\ 
+
+	0,5 & \makecell[l]{\textbf{2.1. }Déterminer graphiquement la durée $\tau$ entre le signal émis et le signal reçu.
+ }\\
+	0,75 & \makecell[l]{\textbf{2.2. }Calculer la distance d qui sépare l’obstacle de l'émetteur (E). }\\
+	0,25 & \makecell[l]{\textbf{2.3. }On considère un point M du milieu de propagation qui se	trouve à la distance $EM = \frac{d}{2}$ \\de l'émetteur (E).Recopier sur votre copie le numéro de la question et écrire la lettre
+\\correspondante à la proposition vraie :L'élongation $y_M(t)$ de M en fonction de l'élongation de \\l'émetteur (E) est: }\\
+\end{tabular}
+
+
+\begin{center}
+	\begin{tabular}{|c|c|}
+		
+a & $y_M(t) = y_E(t-\tau)$ \\
+b & $y_M(t) = y_E(t-\frac{\tau}{2})$ \\
+c & $y_M(t) = y_E(t - \frac{\tau}{4})$ \\
+d & $y_M(t) = y_E(t-2.\tau)$ \\ 
+\end{tabular}
+\end{center}
+
+%\hrulefill
+%\Large{Physique 13pts/78min}
+%\hrulefill\\
+\section*{Partie 2 :Étude de la cible de berkélium 249\dotfill(1,5pts)}
+
+\begin{tcolorbox}
+La  première  étape  de  la  synthèse  de  l’élément  117  a  consisté  en  la  fabrication  du berkélium : un mélange de curium et d’américium a été irradié durant 250 jours par un intense  flux  de  neutrons  [...].  Il  a  fallu  ensuite 90  jours  pour  séparer  et  purifier  les  22 milligrammes de berkélium produits. [...] Ce précieux élément, déposé sur un film de titane, [...] a été soumis, 150 jours durant, au flux de calcium. " Il fallait faire vite, selon Hervé  Savajols,  chercheur  au  Grand  Accélérateur  national  d’ions  lourds  (GANIL),  car l’isotope du berkélium utilisé ayant une période de 320 jours, à la fin de l’expérience, il ne restait que 70\% du berkélium initial ".
+\end{tcolorbox}
+
+
+\begin{tabular}{c|l}
+	0,25  & \makecell[l]{\textbf{1. }On  donne  l’équation  incomplète  de  la  désintégration  du  noyau  de  berkélium 249 :\\ $^{249}_{97}Bk \rightarrow ^{249}_{98}Cf + ......$ \\En précisant les lois de conservation utilisées, identifier la particule émise.  De quel type de \\radioactivité s’agit-il ici ?  }\\
+
+		0,25 & \makecell[l]{\textbf{2. }Sachant  que  le  bombardement  de  la  cible  de  berkélium  a  duré  150 jours,  vérifier  l’affirmation  :\\ "   À  la  fin  de  l’expérience,  il  ne  restait  que 70\% du berkélium initial "}\\
+	& \makecell[l]{\textbf{3. }Activité de la source de berkélium de masse égale à 22 mg :  }\\
+
+		0,5 & \makecell[l]{\textbf{3.1 }Déterminer  le  nombre  initial  $N_0$  de  noyaux  de  berkélium  249  dans l’échantillon  produit  \\sachant  que  la  masse  d’un  atome  de  berkélium 249 est $m_{atome} = 4,136.10^{-25}Kg$.  }\\
+		0,5 & \makecell[l]{\textbf{3.2 }Exprimer  l’activité  initiale  $a_0$  de  l’échantillon  de  berkélium  249  en fonction de $N_0$ et $t_{1/2}$. \\La calculer en becquerel.}\\
+
+\end{tabular}
+
+\section*{Partie 3 :Application des ondes ultrasonores \dotfill(5pts)}
+
+\emph{Beaucoup d’appareils électriques contiennent des circuits qui se composent de condensateurs, de
+bobines, de conducteurs ohmiques ...La fonction de ces composantes varie selon leurs domaines
+d’utilisation et la façon dont elles sont montées dans les circuits.}
+
+Cet partie a pour objectifs :
+\begin{itemize}
+	\item de vérifier les caractéristiques d’une bobine (b) et de l’utiliser dans un circuit RLC série.
+	\item  d’étudier la modulation d’amplitude.
+\end{itemize}
+
+
+\textbf{\underline{I- Détermination des caractéristiques d’une bobine.}}
+
+On réalise le montage expérimental représenté sur la figure 1 comprenant :
+\begin{itemize}
+	\item  Une bobine (b) d’inductance L et de résistance r.
+	\item  Un conducteur ohmique (D) de résistance R.
+	\item  Un générateur de tension (G) de force électromotrice E.
+	\item  Un ampèremètre (A) de résistance négligeable.
+	\item  Un interrupteur K.
+\end{itemize}
+
+A l’instant t = 0, on ferme l’interrupteur K , et on visualise à l’aide d’un oscilloscope à mémoire les
+variations de la tension $u_{PQ}(t)$ entre les pôles du générateur (G) et de la tension $u_R(t)$ entre les bornes du conducteur ohmique (D). On obtient les courbes 1 et 2 représentées sur la figure 2.
+
+
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./img/Rl01.png}
+\end{center}
+
+
+
+La droite (T) représente la tangente à la courbe 2 à l’instant t=0 .
+Dans le régime permanent, l’ampèremètre (A) indique la valeur I = 0,2A.
+
+\begin{tabular}{c|l}
+	0,5  & \makecell[l]{\textbf{1. }Montrer que l’équation différentielle que vérifie la tension $u_R$ s’écrit sous la forme \\: $L.\frac{du_R}{dt} + (R+r).u_R - E.R = 0$}\\
+	0,5 & \makecell[l]{\textbf{2. }Sachant que la solution de l’équation différentielle s’écrit sous la forme : $u_R = U_0.(1-e^{-\frac{t}{\tau}})$,\\trouver l’expression des constantes $U_0$ et $\tau$ en fonction des paramètres du circuit.}\\
+		0,75 & \makecell[l]{\textbf{3. }Trouver l’expression de la résistance r de la bobine (b) en fonction de E , I et $U_0$. Calculer \\la valeur
+de r.}\\
+			0,5 & \makecell[l]{\textbf{4. }Déterminer graphiquement la valeur numérique de t et vérifier que la valeur de l’inductance \\L de la
+bobine est $L=0,4H$}\\
+		\end{tabular}
+
+
+
+
+\textbf{\underline{II- Etude du dipôle RLC}}
+
+On réalise le montage représenté sur la figure 3 qui comprend une bobine (b), le générateur (G) de force électromotrice E, un condensateur de capacité C, un conducteur ohmique de résistance $R' = 10 \Omega$ et un interrupteur K.
+
+Après avoir chargé totalement le condensateur, on bascule l’interrupteur K à la position 2 à l’instant $t = 0$ et on visualise à l’aide d’un oscilloscope à mémoire les variations de la tension $u_c$ aux bornes du
+condensateur en fonction du temps .On obtient l’oscillogramme représenté sur la figure 4.
+
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./img/rlc_01.png}
+\end{center}
+
+\begin{tabular}{c|l}
+	0,25  & \makecell[l]{\textbf{1. }Donner le nom du régime associé à la courbe de la figure 4. }\\
+	0,25 & \makecell[l]{\textbf{2. }Déterminer graphiquement la pseudo-période T.}\\
+	0,5 & \makecell[l]{\textbf{3. }On suppose que la pseudo-période est égale à la période propre T0 de l’oscillateur électrique.
+\\Déduire la valeur de la capacité C du condensateur }\\
+\\
+		\end{tabular}
+
+
+\textbf{\underline{III - Etude de la modulation d’amplitude}}
+
+Afin d’obtenir un signal modulé en amplitude, on utilise
+un circuit intégré multiplieur $X$ (fig.6).
+On applique à l’entrée :
+
+- $E_1$: la tension $u_1(t) = s(t) + U_0$ avec $s(t) = S_m.cos(2.\pi.f_s.t)$représentant le signal informatif et $U_0$ une composante
+continue de la tension. 
+
+- $E_2$: une tension sinusoïdale représentant la porteuse $u_2 = U_m.cos(2.\pi.F_p.t)$
+
+- La tension de sortie $u_s(t)$ obtenue est  $u_s(t) = k.u_1(t).u_2(t)$.
+
+- k est une constante qui dépend du circuit intégré X.
+- Rappel: $2cos(a).cos(b) = cos(a+b) + cos(a-b)$
+
+\begin{tabular}{c|l}
+	1  & \makecell[l]{\textbf{1. }Montrer que us(t) s’écrit sous la forme : \\$u_s(t) = \frac{A.m}{2}.cos(2.\pi.f_1.t) + A.cos(2.\pi.f_2.t) + \frac{A.m}{2}.cos(2.\pi.f_3.t)$ , où m est le taux de modulation\\ et A une constante.}\\
+	0,75 & \makecell[l]{\textbf{2. }La figure 7 représente le spectre de fréquences formé de trois raies de la tension modulée us(t). \\Déterminer m et
+la fréquence fs. La modulation est-elle bonne ?}\\
+		\end{tabular}
+
+
+\begin{center}
+  \includegraphics[width=0.3\textwidth]{./img/mod01.png}
+  \includegraphics[width=0.3\textwidth]{./img/mod02.png}
+\end{center}
+
+
+
+
+
+
+\section*{Partie 4 :Etude du mouvement d’un pendule pesant \dotfill(2,75pts)}
+
+\begin{wrapfigure}{r}{0.16\textwidth}
+	\vspace{-1.2cm}
+\begin{center}
+  \includegraphics[width=0.16\textwidth]{./img/pendule011.png}
+\end{center}
+\end{wrapfigure}
+
+Un pendule pesant, de centre d’inertie G et de masse m, constitué d’une tige et d’un corps solide (S).
+Ce pendule peut effectuer un mouvement de rotation autour d’un axe horizontal ( D) fixe passant par l’extrémité O de la tige (figure 1 ).
+On désigne par $J_{\Delta}$  le moment d’inertie du pendule pesant par rapport à l’axe $(\Delta)$ et par L la distance
+séparant G de l’axe ($\Delta$).
+
+\textbf{Données : }
+
+\begin{itemize}
+	\item $g \approx 10 m.s^{-2}$ ; $m = 400g$ ; $L=50cm$.
+	\item Pour les oscillations de faible amplitude on prendra : $sin(\theta) \approx \theta$ et $1-cos(\theta) \approx \frac{\theta^2}{2}$ avec $\theta $ en radian.
+	\item $\pi^2 \approx 10$
+\end{itemize}
+
+On écarte le pendule de sa position d’équilibre stable, dans le sens positif,
+d’un angle $\theta_m$ très petit, puis on le lâche sans vitesse initiale à l’instant $t=0$.
+
+A chaque instant, la position du pendule est repérée par son abscisse
+angulaire $\theta$. On néglige les frottements et on travaille dans l’approximation
+de faibles oscillations
+\begin{center}
+\textbf{Etude dynamique}
+\end{center}
+\begin{tabular}{c|l}
+	0,5  & \makecell[l]{\textbf{1. }Trouver en appliquant la relation fondamentale de la dynamique, l’équation différentielle du
+\\mouvement du pendule pesant. }\\
+		0,5  & \makecell[l]{\textbf{2. }Trouver l’expression de la période propre $T_0$ de ce pendule en fonction de m , g , L et $J_{\Delta}$ pour \\que
+		la solution de l’équation différentielle s’écrit sous la forme $\theta(t) = \theta_m.cos(\frac{2.\pi}{T_0}.t + \phi)$. }\\
+	0,25  & \makecell[l]{\textbf{3. }Vérifier par une analyse dimensionnelle que l’expression de $T_0$ a la dimension du temps.}\\
+
+	0,5  & \makecell[l]{\textbf{4. }Sachant que la valeur de la période propre est $T_0 \approx 0,7s$ . Calculer $J_{\Delta}$ }\\
+	\end{tabular}
+\begin{center}
+\textbf{Etude énergétique}
+\end{center}
+On choisit le plan horizontal passant par le point $G_0$, position de G à l’équilibre stable, comme état de
+référence de l’énergie potentielle de pesanteur $E_{pp}(\theta = 0) = 0$.
+
+La figure 2 représente le diagramme d’énergie du pendule étudié.
+
+
+\begin{center}
+  \includegraphics[width=0.35\textwidth]{./img/pendule_pesa.png}
+\end{center}
+
+
+
+
+
+\begin{tabular}{c|l}
+	  & \makecell[l]{\textbf{1. }Déterminer la valeur de :}\\
+		0,25  & \makecell[l]{\textbf{1.1. }L'abscisse angulaire maximale $\theta_m$}\\
+	0,25  & \makecell[l]{\textbf{1.2. }L’énergie mécanique $E_m$ du pendule.}\\
+
+	0,5  & \makecell[l]{\textbf{2. }Calculer les deux abscisses angulaires $\theta_1$ et $\theta_2$ pour lesquelles l’énergie potentielle est égale
+\\l’énergie cinétique. } \\
+	\end{tabular}
+
+
+
+
+\section*{Partie 5: Test d'amortissement d'une voiture \dotfill(1,25pts)  }
+
+\begin{wrapfigure}{r}{0.24\textwidth}
+	\vspace{-1.4cm}
+\begin{center}
+  \includegraphics[width=0.24\textwidth]{./img/pendule22.png}
+\end{center}
+\end{wrapfigure}
+
+
+Pour les voitures, le système d'amortissement permet d'atténuer les oscillations verticales se produisant sur la route. Ce système se compose au niveau
+de chaque roue d'un ressort et d'un amortisseur
+(généralement à huile).
+
+On modélise la voiture par un solide (S)
+de masse m et de centre d'inertie G
+qui repose sur un ressort vertical de constante de raideur K (figure 3).
+
+Pour étudier le système oscillant $({solide (S) +  ressort})$, on
+ repère les positions de G
+par son ordonnée y sur un axe
+vertical $Oy$ orienté vers le haut. L'origine O est choisi à la
+position d'équilibre de G.
+
+
+\begin{tabular}{c|l}
+	
+	 0,5 & \makecell[l]{\textbf{1. }Recopier sur votre copie le numéro de la question et écrire la lettre \\correspondante à \\la proposition vraie:
+		 L'expression de la période propre $T_0$ des oscillations libres du système \\oscillant est:\\ a:$T_0 = 2\pi.\frac{K}{m}$ \hspace{1cm} b:$T_0 = 2\pi.\sqrt{\frac{K}{m}}$ \hspace{1cm} c:$T_0 = 2\pi.\sqrt{\frac{m}{K}}$ \hspace{1cm} d:$T_0 = 2\pi.\sqrt{K.m}$ 
+ \\Justifier la réponse par analyse dimensionnelle.}\\
+
+	  & \makecell[l]{\textbf{2. }Lors d'un test du système d'amortissement de deux voitures $(V_1)$ et $(V_2 )$, On a relevé les \\variations $y(t)$ des positions du centre d'inertie G de chaque voiture. Ces variations sont \\indiquées sur la figure (4) pour les deux voitures.}\\
+
+
+	 0,5 & \makecell[l]{\textbf{2.1 }On considère que la pseudo période T est égale à la période propre $T_0$ de l'oscillateur. \\Calculer la valeur de la raideur K , sachant que $ m=1300 kg$ (on prendra $\pi^2 \approx 10 $).}\\
+
+ 0,25 & \makecell[l]{\textbf{2.2 }Indiquer, en justifiant la réponse, la voiture qui présente plus de confort.}\\
+\end{tabular}
+
+\begin{center}
+  \includegraphics[width=0.48\textwidth]{./img/oscillo.png}
+\end{center}
+
+\end{document}
