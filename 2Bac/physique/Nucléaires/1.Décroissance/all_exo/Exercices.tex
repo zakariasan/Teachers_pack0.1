@@ -1,6 +1,6 @@
 \documentclass[12pt, french]{article}
 
-\usepackage{fancyhdr, fancybox, lastpage, makecell}
+\usepackage{fancyhdr, fancybox, mhchem,lastpage, makecell}
 \usepackage[most]{tcolorbox}
 \usepackage[a4paper, margin={0.3in, .75in}]{geometry}
 \usepackage{wrapfig}
@@ -9,14 +9,17 @@
 \renewcommand\footrulewidth{1pt}
 \fancyhf{}
 \rhead{ \em{Zakaria Haouzan}}
-\lhead[C]{\em{2ème année baccalauréat SM-X}}
+\lhead[C]{\em{2ème année baccalauréat SM}}
 \chead[C]{}
 \rfoot[C]{}
 \lfoot[R]{ \emph{Exercices Supplémentaires}}
 \cfoot[]{\em{Page \thepage / \pageref{LastPage}}}
 
 
-\newtcolorbox{Box2}[2][]{
+\newtcolorbox{Box2}[2][
+enhanced,
+breakable,
+]{
                 lower separated=false,
                 colback=white,
 colframe=white!20!black,fonttitle=\bfseries,
@@ -159,6 +162,77 @@ prisonnier. La mesure du rapport $\frac{N_{Ar}}{N_{K}}$ permet de déterminer l�
 \textbf{5.} Déterminer l’âge de la roche si le rapport précédent est égal à 0,033.
 
 \end{Box2}
+
+\begin{Box2}{Exercice 7: }
+\textbf{1.} Par une série de transformations radioactives, l’uranium \(^ {238}_{92} \mathrm{U}\) se transforme en plomb \(^ {206}_{82} \mathrm{Pb}\). \\
+Certaines étapes correspondent à une radioactivité \(\alpha\), les autres à une radioactivité \(\beta^-\). \\
+Écrire l’équation-bilan globale et déterminer le nombre de particules \(\alpha\) et \(\beta^-\) émises.
+
+
+\textbf{2.} Un noyau d’uranium \(^ {235}_{92} \mathrm{U}\) bombardé par un neutron noté \(^ {1}_{0} \mathrm{n}\) donne du xénon \(^ {140}_{54} \mathrm{Xe}\) et du strontium \(\mathrm{Sr}\) dont le nombre de masse est \(94\). \\
+Écrire l’équation-bilan correspondant à cette réaction nucléaire et déterminer le nombre de charge du strontium ainsi que le nombre de neutrons formés.
+
+  
+\end{Box2}
+\begin{Box2}{Exercice 8:}
+ \textbf{1.} Écrire l’équation-bilan de la désintégration correspondante et donner la composition du noyau fils ainsi que son symbole.
+
+\vspace{0.5cm}
+
+\textbf{2.} Que vaut le nombre \(N_0\) de noyaux radioactifs contenus dans une masse \(m_0 = 10^{-5} \, \mathrm{g}\) d’astate \(^ {211}_{85} \mathrm{At}\)\\
+
+\textbf{Données :}
+\begin{itemize}
+    \item \(Z(\mathrm{Pb}) = 82\) ; \(Z(\mathrm{Bi}) = 83\) ; \(Z(\mathrm{Po}) = 84\) ; \(Z(\mathrm{Rn}) = 86\) ; \(Z(\mathrm{Fr}) = 87\) ; \(Z(\mathrm{Ra}) = 88\)
+    \item \(N_A = 6.02 \times 10^{23} \, \mathrm{mol}^{-1}\)
+    \item \(m_\text{nucléon} \approx 1.66 \times 10^{-27} \, \mathrm{kg}\)
+\end{itemize}
+\end{Box2}
+
+\begin{Box2}{Exercice 9:}
+  
+Le polonium se désintègre en émettant des particules \(\alpha\). La réaction nucléaire correspondante a pour équation-bilan :
+$
+  \ce{^{210}_{84}\mathrm{Po} -> ^{4}_{2}\mathrm{He} + ^{206}_{82}\mathrm{Pb}}
+$
+\vspace{0.5cm}
+
+\textbf{1.} À la date \(t = 0\), on considère une masse \(m_0 = 1 \, \mathrm{g}\) de polonium.  
+Quelle est, à la date \(t' = 277 \, \mathrm{jours}\), la masse d’hélium obtenue ?  
+
+\vspace{0.5cm}
+
+\textbf{2.} Quelle masse de polonium reste-t-il au bout de deux ans ?  
+
+\vspace{0.5cm}
+
+\textbf{Données :}
+\begin{itemize}
+  \item Masse de la particule $\alpha \approx 4 g.mol^{-1}$ 
+    \item $(M(\mathrm{Po}) \approx 210  \mathrm{g.mol}^{-1}$
+    \item $t_{1/2}(\mathrm{Po}) = 138.5  \mathrm{jours}$
+    \item $1an = 365.25  \mathrm{jours}$
+    \item $N_A = 6.02 \times 10^{23}  \mathrm{mol}^{-1}$
+\end{itemize}
+\end{Box2}
+
+
+\begin{Box2}{Exercice 10:}
+ Les isotopes \(^{235}\mathrm{U}\) et \(^{238}\mathrm{U}\) représentent actuellement respectivement \(0,72\%\) et \(99,28\%\) de cet élément.
+
+\begin{enumerate}
+    \item Exprimer le rapport actuel du nombre de noyaux de l’isotope \(^{238}\mathrm{U}\) et de l’isotope \(^{235}\mathrm{U}\).
+    \item Donner l’ordre de grandeur de l’âge de l’élément uranium.
+\end{enumerate}
+
+\textbf{Données :}
+\begin{itemize}
+    \item \(\lambda_{235} = 1,02 \times 10^{-9} \, \mathrm{an}^{-1}\)
+    \item \(\lambda_{238} = 1,55 \times 10^{-10} \, \mathrm{an}^{-1}\)
+    \item Les deux isotopes sont supposés formés en abondance égale.
+\end{itemize} 
+\end{Box2}
+
 	%\vspace{2cm}
 %\begin{center}
    %\Large{ \em{Exercices Supplémentaires}}
