@@ -1,6 +1,4 @@
 \documentclass[12pt, french]{article}
-\usepackage{circuitikz}
-\usepackage{pgfplots}
 
 \usepackage{fancyhdr, fancybox, lastpage}
 \usepackage[most]{tcolorbox}
@@ -18,10 +16,7 @@
 \cfoot[]{\em{Page \thepage / \pageref{LastPage}}}
 
 
-\newtcolorbox{Box2}[2][
-enhanced,
-breakable,
-]{
+\newtcolorbox{Box2}[2][]{
                 lower separated=false,
                 colback=white,
 colframe=white!20!black,fonttitle=\bfseries,
@@ -42,80 +37,27 @@ title=#2,#1}
 
 \vspace{-0.5cm}
 %%_________________________Exercice ! :"_________________________Exercice
-   \begin{Box2}{Exercice 1 : Réponse de dipôle RL à une tension électrique continu. (SM 2008 R)}
-Cet exercice a pour but d'étude de la réponse de dipôle RL constituée de la bobine (B) et d'un conducteur ohmique. On effectue l'expérience suivante en utilisant le montage de La figure 1 qui se compose de :
+   \begin{Box2}{Exercice 1 : Détermination de l’inductance d’une bobine dans une chaine électronique }
+\begin{wrapfigure}{r}{0.22\textwidth}
+  \begin{center}
+	  \vspace{-0.6cm}
+	\includegraphics[width=0.22\textwidth]{./img/RL_ex00.png}
+  \end{center}
+\end{wrapfigure}
 
-\begin{circuitikz}
-    % Generator (Ideal)
-    \draw (0,3) to[american voltage source, l_=$E$] (0,0);
 
-    % Inductor (coil style)
-    \draw[->, thick] (0,3) to[L, l_=$u_L$] (3,3);
+On monte en série un conducteur ohmique de résistance $R=2 K \Omega$ et une
+bobine d’inductance L et de résistance négligeable, on obtient un dipôle AB On
+applique entre les bornes de AB une tension triangulaire à l’aide d’un GBF
+(figure 2)
 
-    % Variable Resistor
-    \draw (3,3) to[vR=$u_R$] (6,3) ;
+Dans l’intervalle de temps [0 , 2ms], la tension entre les bornes de la bobine
+est $u_{AM}=-0,2V$ et la tension $u_{BM}$ entre les bornes du conducteur ohmique est : $u_{BM}=5.10^3 t $ (V)
 
-    % Switch
-    \draw (6,3) to[switch, l=$K$] (6,0);
+1. Montrer que la relation entre $u_{AM}$ et $u_{BM}$ est de la forme :
+$u_{AM} = -\frac{L}{R}.\frac{du_{BM}}{dt}$
 
-    % Closing the loop
-    \draw (6,0) -- (0,0);
-\end{circuitikz}
-
-  \vspace{-4cm}
-
-  \hspace{10cm}
-\begin{tikzpicture}
-\begin{axis}[
-    width=7cm,
-    height=6cm,
-    axis lines=middle,
-    xlabel=$t(ms)$,
-    ylabel=$i(mA)$,
-    xmin=0,
-    xmax=16,    % Extended slightly
-    ymin=0,
-    ymax=120,   % Extended to show overshoot
-    xtick={2.5,5,7.5,10,12.5,15},
-    ytick={20,40,60,80,100,120},
-    grid=both,
-    grid style={dashed,gray!30},
-    xlabel style={at={(axis description cs:1.05,0)},anchor=west},
-    ylabel style={at={(axis description cs:0,1.05)},anchor=south}
-]
-
-% Main curve with slightly higher asymptote
-\addplot[thick, smooth, domain=0:16, samples=100] {100*(1-exp(-x/2))};
-
-% Steeper tangent line
-\draw[dashed] (axis cs:0,0) -- (axis cs:2.5,100);
-
-% Label for tangent
-\node[rotate=60] at (axis cs:1.5,35) {$(T)$};
-
-\end{axis}
-\end{tikzpicture}
-\vspace{-2cm}
-
-\begin{itemize}
-    \item La bobine (B)
-    \item le conducteur ohmique (R) de résistance R réglable.
-    \item un générateur (G) idéal de force électromotrice Constante E = 2,4V ;
-    \item Un interrupteur K.
-\end{itemize}
-
-On ajuste la résistance R à la valeur $R_1 = 20\Omega$, puis on ferme l'interrupteur K à l'instant t = 0.
-
-L'enregistrement de l'évolution de la tension $u_R$ entre les bornes du conducteur ohmique (R) permet d'obtenir la courbe représentant les changements d'intensité du courant i(t) en fonction de temps (Figure 2). Le droite (T) représente la tangente de la courbe à l'instant t = 0.
-
-\begin{enumerate}
-    \item Trouver l'équation différentielle que vérifie l'intensité du courant i(t).
-    
-    \item Sachant que la solution de l'équation différentielle s'écrit sous la forme 
-    $i(t) = A\cdot\left(1-e^{-\frac{t}{\tau}}\right)$. Trouver l'expression des constantes A et $\tau$ en fonction des paramètres du circuit.
-    
-    \item À l'aide de la courbe 2, déterminer les valeurs de r et L.
-\end{enumerate}
+2. Déduire la valeur de l’inductance L de la bobine
 
    \end{Box2}
 
@@ -156,11 +98,9 @@ branche l’oscilloscope pour visualiser les deux tensions $u_{AM}$(t) et $u_{BM
 
 %%_________________________Exercice ! 3:"_________________________Exercice
 \begin{Box2}{Exercice 3 :Etablissement du courant dans le circuit primaire : }
-\begin{wrapfigure}{r}{0.33\textwidth}
+\begin{wrapfigure}{r}{0.12\textwidth}
   \begin{center}
-	\includegraphics[width=0.20\textwidth]{./img/RL_ex02.png}
-
-	\includegraphics[width=0.33\textwidth]{./img/RL_ex021.png}
+	\includegraphics[width=0.12\textwidth]{./img/RL_ex02.png}
   \end{center}
 \end{wrapfigure}
 	On modélise le circuit primaire par le montage de la figure 2, où :
@@ -172,6 +112,8 @@ tension continue de f.é.m E=12V.
 
 - (D) : Un conducteur ohmique équivalent au reste du circuit de
 résistance R = 4,5 $\Omega$.
+
+- K : Interrupteur
 
 On ferme l’interrupteur K à l’instant t = 0, le circuit est alors
 traversé par un courant électrique i(t).
@@ -196,16 +138,16 @@ de la bobine (b).
 
 %%_________________________Exercice 4 : _________________________Exercice
 
-%\begin{Box2}{Exercice 3 :Etablissement du courant dans le circuit primaire :  }
+\begin{Box2}{Exercice 3 :Etablissement du courant dans le circuit primaire :  }
 %\begin{wrapfigure}{r}{0.4\textwidth}
-  %\begin{center}
+  \begin{center}
 	  %\vspace{-0.6cm}
-	%\includegraphics[width=0.33\textwidth]{./img/RL_ex021.png}
- % \end{center}
+	\includegraphics[width=0.33\textwidth]{./img/RL_ex021.png}
+  \end{center}
 %\end{wrapfigure}
 
 
-%\end{Box2}
+\end{Box2}
 %\vspace{2cm}
 \begin{center}
 \vspace{-0.7cm}
