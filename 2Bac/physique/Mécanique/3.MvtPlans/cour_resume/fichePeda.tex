@@ -1,0 +1,343 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=.20in]{geometry}
+%\usepackage{array}
+\usepackage{graphicx, subfig, wrapfig, makecell,fancyhdr,xcolor,amsmath }
+\newcommand\headerMe[2]{\noindent{}#1\hfill#2}
+\renewcommand \thesection{\Roman{section}}
+\usepackage{colortbl}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{enumitem}
+
+\newcolumntype{M}[1]{>{\raggedright}m{#1}}
+
+\chead{\includegraphics[width = 0.1\textwidth]{./img/logoMin.png}}
+\cfoot{helllo}
+
+\begin{document}
+
+\begin{center}
+	\includegraphics[width = 0.18\textwidth]{./img/logoMin.png}
+	\vspace{-3cm}
+\end{center}
+\headerMe{Matière : Physique-Chimie}{Établissement : \emph{Lycée SKHOR qualifiant}}\\
+\headerMe{ Unité : Mécanique }{  Professeur :\emph{Zakaria Haouzan}}\\
+\headerMe{Niveau : 2BAC-SM-PC}{Heure : 6H}\\
+
+\begin{center}
+	%\vspace{1cm}
+	\underline{Leçon N°3: Les mouvements plans}\\
+	Durée 7h00
+	\\
+	\vspace{.2cm}
+	\hrulefill
+	\Large{Fiche Pédagogique}
+	\hrulefill\\
+\end{center}
+%end Headerss------------------------
+
+
+\section*{Prérequis}
+\begin{itemize}
+    \item Cinématique du point matériel (position, vitesse, accélération)
+    \item Dynamique du point matériel (lois de Newton, forces)
+    \item Champ de pesanteur
+    \item Notions de base sur les champs électriques et magnétiques
+    \item Trigonométrie et vecteurs
+\end{itemize}
+
+\section*{Compétences visées}
+\begin{itemize}
+    \item Caractériser les différents types de mouvements plans
+    \item Établir et exploiter les équations horaires d'un mouvement dans un plan
+    \item Déterminer les caractéristiques d'un mouvement de projectile dans le champ de pesanteur
+    \item Analyser le mouvement d'une particule chargée dans un champ électrique uniforme
+    \item Analyser le mouvement d'une particule chargée dans un champ magnétique uniforme
+    \item Appliquer ces connaissances à des situations concrètes (spectromètre de masse, cyclotron)
+\end{itemize}
+
+\section*{Savoir et savoir-faire}
+\begin{itemize}
+    \item Déterminer les équations du mouvement d'un solide sur un plan horizontal et sur un plan incliné
+    \item Établir et exploiter les équations du mouvement d'un projectile dans le champ de pesanteur
+    \item Calculer la portée et la hauteur maximale d'un projectile
+    \item Décrire l'action d'un champ magnétique sur une particule chargée en mouvement
+    \item Caractériser la force de Lorentz et ses effets sur la trajectoire d'une particule chargée
+    \item Appliquer ces connaissances à l'étude du spectromètre de masse et du cyclotron
+\end{itemize}
+
+\section*{Outils didactiques}
+\begin{itemize}
+    \item Ordinateur et logiciels de simulation
+    \item Vidéoprojecteur
+    \item Tube de Crookes
+    \item Bobines d'Helmholtz
+    \item Maquette de plan incliné
+    \item Rail avec électroaimant pour l'étude du mouvement des projectiles
+    \item Maquettes ou animations de spectromètre de masse et de cyclotron
+\end{itemize}
+
+\section*{Situation-problème}
+Un joueur de basketball tire un ballon vers le panier. Le ballon suit une trajectoire dans l'air avant d'atteindre (ou non) sa cible.
+\begin{enumerate}
+    \item Comment peut-on décrire mathématiquement la trajectoire du ballon?
+    \item Quels sont les facteurs qui influencent la réussite du tir?
+    \item Comment déterminer l'angle optimal pour marquer un panier?
+\end{enumerate}
+
+\vspace{1cm}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|p{4cm}|p{5.5cm}|p{5.5cm}|p{1.5cm}|}
+\hline
+\rowcolor{gray!30} \textbf{Éléments du cours} & \textbf{Activités didactiques de l'enseignant} & \textbf{Activités didactiques de l'apprenant} & \textbf{Évaluation} \\
+\hline
+\textbf{I. Introduction aux mouvements plans} & 
+\begin{itemize}
+    \item Présenter la situation-problème 
+    \item Demander aux apprenants de proposer des hypothèses pour répondre aux questions
+    \item Collecter et discuter les hypothèses proposées
+\end{itemize} & 
+\begin{itemize}
+    \item Analyser la situation et formuler des hypothèses
+    \item Proposer des explications sur la trajectoire du ballon
+    \item Identifier les paramètres qui peuvent influencer le tir
+\end{itemize} &
+Évaluation diagnostique \\
+\hline
+\textbf{II. Mouvement d'un solide sur un plan horizontal et sur un plan incliné (Rappel)} & 
+\begin{itemize}
+    \item Rappeler les équations du mouvement sur un plan horizontal
+    \item Présenter le cas du plan incliné
+    \item Poser des questions sur les forces en jeu
+\end{itemize} & 
+\begin{itemize}
+    \item Identifier les forces agissant sur un solide sur un plan horizontal
+    \item Analyser les forces sur un plan incliné
+    \item Établir les équations du mouvement
+\end{itemize} &
+Évaluation formative \\
+\hline
+\textbf{III. Mouvement d'un projectile dans le champ de pesanteur} &
+\begin{itemize}
+    \item Réaliser l'expérience avec une bille lancée depuis un rail
+    \item Demander d'observer et de décrire la trajectoire
+    \item Guider l'établissement des équations du mouvement
+\end{itemize} & 
+\begin{itemize}
+    \item Observer la trajectoire parabolique
+    \item Appliquer la 2ème loi de Newton
+    \item Établir les équations horaires du mouvement
+    \item Déterminer l'équation de la trajectoire
+\end{itemize} &
+Évaluation formative \\
+\hline
+\textbf{IV. Mouvement d'une particule chargée dans un champ électrique uniforme} & 
+\begin{itemize}
+    \item Présenter le dispositif expérimental
+    \item Expliquer l'action d'un champ électrique sur une particule chargée
+    \item Guider l'établissement des équations du mouvement
+\end{itemize} & 
+\begin{itemize}
+    \item Identifier la force électrique
+    \item Appliquer la 2ème loi de Newton
+    \item Établir les équations du mouvement
+    \item Caractériser la trajectoire
+\end{itemize} &
+Évaluation formative \\
+\hline
+\textbf{V. Mouvement d'une particule chargée dans un champ magnétique uniforme} & 
+\begin{itemize}
+    \item Réaliser l'expérience avec un tube de Crookes
+    \item Expliquer la force de Lorentz
+    \item Guider l'analyse du mouvement
+    \item Démontrer que le mouvement est circulaire uniforme
+\end{itemize} & 
+\begin{itemize}
+    \item Observer la déviation des électrons
+    \item Caractériser la force magnétique
+    \item Démontrer que le mouvement est circulaire uniforme
+    \item Calculer le rayon de la trajectoire
+\end{itemize} &
+Évaluation formative \\
+\hline
+\textbf{VI. Applications: Spectromètre de masse et cyclotron} & 
+\begin{itemize}
+    \item Présenter le principe du spectromètre de masse
+    \item Expliquer le fonctionnement du cyclotron
+    \item Faire le lien avec les concepts étudiés
+\end{itemize} & 
+\begin{itemize}
+    \item Comprendre le principe de séparation des isotopes
+    \item Analyser le mouvement des particules dans ces dispositifs
+    \item Calculer les paramètres pertinents
+\end{itemize} &
+Évaluation sommative \\
+\hline
+\textbf{VII. Conclusion et évaluation} & 
+\begin{itemize}
+    \item Synthétiser les concepts clés
+    \item Proposer des exercices d'application
+    \item Revenir sur la situation-problème initiale
+\end{itemize} & 
+\begin{itemize}
+    \item Résoudre les exercices proposés
+    \item Répondre aux questions de la situation-problème
+    \item Formuler une conclusion
+\end{itemize} &
+Évaluation sommative \\
+\hline
+\end{tabular}
+\end{table}
+
+\section*{Déroulement détaillé}
+
+\subsection*{I. Introduction aux mouvements plans}
+
+\begin{itemize}
+    \item Définir ce qu'est un mouvement plan (mouvement dont la trajectoire est située dans un plan)
+    \item Présenter les différents types de mouvements plans qui seront étudiés:
+    \begin{itemize}
+        \item Mouvement sur un plan horizontal et sur un plan incliné
+        \item Mouvement d'un projectile dans le champ de pesanteur
+        \item Mouvement d'une particule chargée dans un champ électrique uniforme
+        \item Mouvement d'une particule chargée dans un champ magnétique uniforme
+    \end{itemize}
+    \item Discuter les applications pratiques de l'étude des mouvements plans (balistique, technologies, sports, etc.)
+\end{itemize}
+
+\subsection*{II. Mouvement d'un solide sur un plan horizontal et sur un plan incliné (Rappel)}
+
+\begin{itemize}
+    \item Rappeler les équations du mouvement rectiligne uniformément varié
+    \item Analyser les forces en jeu sur un plan horizontal (poids, réaction normale, frottements)
+    \item Analyser les forces en jeu sur un plan incliné (composantes du poids, réaction normale, frottements)
+    \item Établir les équations du mouvement dans chaque cas
+\end{itemize}
+
+\subsection*{III. Mouvement d'un projectile dans le champ de pesanteur}
+
+\begin{itemize}
+    \item Réaliser l'expérience de la bille lancée depuis un rail
+    \item Observer et caractériser la trajectoire parabolique
+    \item Établir le bilan des forces (poids uniquement si on néglige les frottements de l'air)
+    \item Appliquer la 2ème loi de Newton pour établir les équations du mouvement:
+    \begin{align*}
+        \begin{cases}
+            a_x &= 0 \\
+            a_y &= -g
+        \end{cases}
+    \end{align*}
+    \item Intégrer ces équations pour obtenir les composantes de la vitesse:
+    \begin{align*}
+        \begin{cases}
+            v_x &= v_0\cos\alpha \\
+            v_y &= -gt + v_0\sin\alpha
+        \end{cases}
+    \end{align*}
+    \item Intégrer à nouveau pour obtenir les équations horaires:
+    \begin{align*}
+        \begin{cases}
+            x &= v_0\cos\alpha \cdot t \\
+            y &= -\frac{1}{2}gt^2 + v_0\sin\alpha \cdot t
+        \end{cases}
+    \end{align*}
+    \item Éliminer le paramètre t pour obtenir l'équation de la trajectoire:
+    \begin{align*}
+        y = -\frac{g}{2v_0^2\cos^2\alpha}x^2 + x\tan\alpha
+    \end{align*}
+    \item Déterminer les coordonnées du sommet S de la trajectoire:
+    \begin{align*}
+        x_S &= \frac{v_0^2\sin(2\alpha)}{2g} \\
+        y_S &= \frac{v_0^2\sin^2\alpha}{2g}
+    \end{align*}
+    \item Calculer la portée du projectile:
+    \begin{align*}
+        x_P = \frac{v_0^2\sin(2\alpha)}{g}
+    \end{align*}
+    \item Déterminer l'angle optimal pour une portée maximale: $\alpha = \frac{\pi}{4}$
+\end{itemize}
+
+\subsection*{IV. Mouvement d'une particule chargée dans un champ électrique uniforme}
+
+\begin{itemize}
+    \item Définir le champ électrique uniforme
+    \item Caractériser la force électrique: $\vec{F} = q\vec{E}$
+    \item Établir les équations du mouvement en appliquant la 2ème loi de Newton
+    \item Montrer que le mouvement est uniformément accéléré
+    \item Établir l'analogie avec la chute libre dans le champ de pesanteur
+\end{itemize}
+
+\subsection*{V. Mouvement d'une particule chargée dans un champ magnétique uniforme}
+
+\begin{itemize}
+    \item Définir le champ magnétique uniforme
+    \item Présenter l'expérience du tube de Crookes
+    \item Observer la déviation des électrons dans différentes configurations
+    \item Caractériser la force magnétique (force de Lorentz): $\vec{F} = q\vec{v} \wedge \vec{B}$
+    \item Analyser les caractéristiques de cette force:
+    \begin{itemize}
+        \item Direction: perpendiculaire au plan $(\vec{v}, \vec{B})$
+        \item Sens: selon la règle de la main droite
+        \item Intensité: $F = |q|vB\sin(\vec{v},\vec{B})$
+    \end{itemize}
+    \item Démontrer que le mouvement est uniforme:
+    \begin{itemize}
+        \item La force de Lorentz est perpendiculaire à la vitesse
+        \item Son travail est nul: $W(\vec{F}) = 0$
+        \item L'énergie cinétique reste constante: $\Delta E_c = 0$
+        \item La vitesse est constante: $v = cte$
+    \end{itemize}
+    \item Démontrer que le mouvement est plan:
+    \begin{itemize}
+        \item L'accélération tangentielle est nulle: $a_t = \frac{dv}{dt} = 0$
+        \item L'accélération est normale
+        \item Le mouvement se fait dans un plan perpendiculaire à $\vec{B}$
+    \end{itemize}
+    \item Démontrer que le mouvement est circulaire:
+    \begin{itemize}
+        \item En appliquant la 2ème loi de Newton: $q\vec{v} \wedge \vec{B} = m\vec{a}$
+        \item En utilisant le repère de Frenet: $|q|vB = m\frac{v^2}{R}$
+        \item Calculer le rayon de la trajectoire: $R = \frac{mv}{|q|B}$
+    \end{itemize}
+    \item Analyser la déviation magnétique:
+    \begin{itemize}
+        \item Établir la relation: $D_m = \frac{l \cdot D \cdot |q| \cdot B}{m \cdot v_0}$
+    \end{itemize}
+\end{itemize}
+
+\subsection*{VI. Applications: Spectromètre de masse et cyclotron}
+
+\begin{itemize}
+    \item Présenter le principe du spectromètre de masse:
+    \begin{itemize}
+        \item Description des différentes parties (chambre d'ionisation, d'accélération, de séparation)
+        \item Principe de séparation des isotopes
+        \item Calcul du diamètre de la trajectoire: $D = 2R = \frac{2mv_0}{|q|B}$
+    \end{itemize}
+    \item Expliquer le fonctionnement du cyclotron:
+    \begin{itemize}
+        \item Description du dispositif (dees, champ magnétique, oscillateur)
+        \item Principe d'accélération des particules
+        \item Synchronisation du champ électrique alternatif
+    \end{itemize}
+\end{itemize}
+
+\subsection*{VII. Conclusion et évaluation}
+
+\begin{itemize}
+    \item Synthétiser les concepts clés des mouvements plans étudiés
+    \item Revenir sur la situation-problème initiale:
+    \begin{itemize}
+        \item Trajectoire parabolique du ballon de basketball
+        \item Facteurs influençant la réussite du tir (vitesse initiale, angle, hauteur de lancer)
+        \item Détermination de l'angle optimal
+    \end{itemize}
+    \item Proposer des exercices d'application pour chaque type de mouvement étudié
+    \item Évaluer la compréhension des concepts par les apprenants
+\end{itemize}
+
+
+
+\end{document}

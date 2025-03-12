@@ -1,0 +1,189 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=.20in]{geometry}
+%\usepackage{array}
+\usepackage{graphicx, subfig, wrapfig, makecell,fancyhdr,xcolor }
+\newcommand\headerMe[2]{\noindent{}#1\hfill#2}
+\renewcommand \thesection{\Roman{section}}
+
+\newcolumntype{M}[1]{>{\raggedright}m{#1}}
+
+\chead{\includegraphics[width = 0.1\textwidth]{./img/logoMin.png}}
+\cfoot{helllo}
+
+\begin{document}
+
+\begin{center}
+\includegraphics[width = 0.18\textwidth]{./img/logoMin.png}
+\vspace{-3cm}
+\end{center}
+\headerMe{Matière : Chimie}{Établissement : \emph{Lycée SKHOR qualifiant}}\\
+\headerMe{ Unité :  Sens d'évolution d'un \\système chimique}{  Professeur :\emph{Zakaria Haouzan}}\\
+\headerMe{Niveau : 2BAC-SM-pc}{Heure : 6H}\\
+
+\begin{center}
+	%\vspace{1cm}
+	\underline{Leçon $N^{\circ}$10: Transformations forcées - L’électrolyse}\\
+Durée 2h00
+\\
+    \vspace{.2cm}
+\hrulefill
+\Large{Fiche Pédagogique}
+\hrulefill\\
+\end{center}
+%end Headerss------------------------
+
+
+%__________________Chimie ______________________-
+%%%%%%%+_+_+_+_+_+_+_+_+_Partie1
+\section{Objectifs Pédagogiques}
+\begin{itemize}
+    \item Différencier les transformations spontanées et forcées.
+    \item Identifier les rôles de l'anode et de la cathode dans l'électrolyse.
+    \item Analyser les réactions d'oxydo-réduction lors de l'électrolyse.
+    \item Explorer les applications industrielles de l'électrolyse.
+\end{itemize}
+
+\section{Situation Problématique Initiale}
+\textbf{Contexte :}  
+Vous êtes un chimiste chargé de récupérer du cuivre à partir d’une solution usée contenant des ions Cu\(^{2+}\) et Br\(^-\). Spontanément, le cuivre métallique réagit avec le dibrome (Br\(_{2}\)) pour former Cu\(^{2+}\) et Br\(^-\). Comment inverser ce processus pour déposer du cuivre sur un objet et régénérer le dibrome ? Quelle source d’énergie utiliser ?
+
+\textbf{Rôle de l’enseignant :}
+\begin{itemize}
+    \item Poser des questions : 
+    \begin{itemize}
+        \item  Que se passe-t-il spontanément entre Cu et Br\(_{2}\) ? 
+        \item  Comment obliger la réaction inverse à se produire ? 
+    \end{itemize}
+    \item Encourager le rappel des constantes d’équilibre.
+\end{itemize}
+
+\textbf{Rôle des élèves :}
+\begin{itemize}
+    \item Discuter : Pourquoi Cu + Br\(_{2}\) est-il spontané ? Que signifie K = 1,2 × 10\(^{25}\) ?
+    \item Proposer : Peut-on utiliser l’électricité pour inverser la réaction ?
+\end{itemize}
+
+\section{Déroulement de la Leçon}
+
+\subsection{Phase 1 : Transformations Spontanées (1h)}
+\textbf{Activités de l’enseignant :}
+\begin{itemize}
+    \item Réviser : Cu\(_{(s)}\) + Br\(_{2(aq)} \rightleftharpoons\) Cu\(^{2+}_{(aq)}\) + 2Br\(^-_{(aq)}\).
+    \item Questionner : Pourquoi cette réaction est-elle spontanée ? Que signifie Q\(_{r,i}\) < K ? 
+    \item Démontrer (ou décrire) : Mélange de tournure de cuivre et solution de Br\(_{2}\).
+\end{itemize}
+
+\textbf{Activités des élèves :}
+\begin{itemize}
+    \item Répondre :  K élevé indique une réaction totale dans le sens direct. 
+    \item Observer : Décoloration de Br\(_{2}\), bleu des ions Cu\(^{2+}\).
+    \item Demander : La réaction inverse est-elle possible spontanément ? 
+\end{itemize}
+
+\textbf{Matériel :} Tournure de cuivre, solution de Br\(_{2}\) (10\(^{-2}\) mol/L), tube à essai.
+
+\subsection{Phase 2 : Introduction aux Transformations Forcées (1h)}
+\textbf{Activités de l’enseignant :}
+\begin{itemize}
+    \item Définir :  Une transformation forcée va à l’encontre de l’évolution spontanée, nécessitant une énergie externe. 
+    \item Questionner : Comment forcer Cu\(^{2+}\) + 2Br\(^-\) à former Cu et Br\(_{2}\) ?
+    \item Introduire l’électrolyse comme solution.
+\end{itemize}
+
+\textbf{Activités des élèves :}
+\begin{itemize}
+    \item Hypothèse :  Quel montage pour fournir de l’énergie électrique ?
+    \item Demander : Que deviennent les ions pendant l’électrolyse ?
+\end{itemize}
+
+\subsection{Phase 3 : Expérience - Électrolyse de CuBr\(_{2}\) (2h)}
+\textbf{Activités de l’enseignant :}
+\begin{itemize}
+    \item Préparer un tube en U avec CuBr\(_{2}\) et électrodes en graphite.
+    \item Questionner :  Que se passe-t-il pour U > 1,2 V ? 
+    \item Expliquer :
+    \begin{itemize}
+        \item Anode : 2Br\(^-\) \(\rightleftharpoons\) Br\(_{2}\) + 2e\(^-\)
+        \item Cathode : Cu\(^{2+}\) + 2e\(^-\) \(\rightleftharpoons\) Cu
+    \end{itemize}
+\end{itemize}
+
+\textbf{Activités des élèves :}
+\begin{itemize}
+    \item Observer : Cu se dépose à la cathode, Br\(_{2}\) (orange) près de l’anode.
+    \item Demander :  Pourquoi Cu à la cathode et Br\(_{2}\) à l’anode ?
+    \item Écrire : Cu\(^{2+}\) + 2Br\(^-\) \(\rightleftharpoons\) Cu + Br\(_{2}\).
+\end{itemize}
+
+\textbf{Matériel :} Tube en U, solution de CuBr\(_{2}\), électrodes graphite, alimentation DC (>1,2 V), fils, lunettes de sécurité.
+
+\textbf{Étapes :}
+\begin{enumerate}
+    \item Remplir le tube avec CuBr\(_{2}\).
+    \item Placer les électrodes dans chaque bras.
+    \item Connecter l’anode (+) et la cathode (-).
+    \item Appliquer U > 1,2 V pendant 15 min.
+    \item Noter les observations.
+\end{enumerate}
+
+\subsection{Phase 4 : Électrolyse de NaCl (1h)}
+\textbf{Activités de l’enseignant :}
+\begin{itemize}
+    \item Réaliser l’électrolyse de NaCl.
+    \item Questionner : Quels gaz ou produits attendre ?
+    \item Analyser :
+    \begin{itemize}
+        \item Anode : 2Cl\(^-\) \(\rightleftharpoons\) Cl\(_{2}\) + 2e\(^-\)
+        \item Cathode : 2H\(_{2}\)O + 2e\(^-\) \(\rightleftharpoons\) H\(_{2}\) + 2OH\(^-\)
+    \end{itemize}
+\end{itemize}
+
+\textbf{Activités des élèves :}
+\begin{itemize}
+    \item Prédire : Le sodium métallique se forme-t-il ?
+    \item Observer : Cl\(_{2}\) (jaune-vert) à l’anode, H\(_{2}\) et OH\(^-\) à la cathode.
+    \item Écrire : 2H\(_{2}\)O + 2Cl\(^-\) \(\longrightarrow\) Cl\(_{2}\) + H\(_{2}\) + 2OH\(^-\).
+\end{itemize}
+
+\textbf{Matériel :} Solution NaCl, tube en U, électrodes graphite, alimentation DC, indicateur pH.
+
+\subsection{Phase 5 : Anode Soluble et Applications (1h)}
+\textbf{Activités de l’enseignant :}
+\begin{itemize}
+    \item Démontrer : Électrolyse avec anode Cu et cathode Fe.
+    \item Expliquer : Transfert Cu \(\rightarrow\) Cu\(^{2+}\) (anode) puis Cu\(^{2+}\) \(\rightarrow\) Cu (cathode).
+    \item Lister les applications (purification, placage).
+\end{itemize}
+
+\textbf{Activités des élèves :}
+\begin{itemize}
+    \item Observer : Cu disparaît de l’anode et se dépose sur la cathode.
+    \item Demander : Pourquoi la couleur de la solution reste-t-elle constante ?
+    \item Citer 3 applications industrielles.
+\end{itemize}
+
+\textbf{Matériel :} Anode Cu, cathode Fe (clé), solution CuSO\(_{4}\), alimentation DC.
+
+\section{Évaluation}
+\textbf{Questions de l’enseignant :}
+\begin{itemize}
+    \item  Quelle est la différence entre transformations spontanées et forcées ?
+    \item  Quels facteurs déterminent les réactions dans l’électrolyse ? 
+\end{itemize}
+
+\textbf{Tâches des élèves :}
+\begin{itemize}
+    \item Résoudre :  Prédire les produits de l’électrolyse de ZnCl\(_{2}\).
+    \item Réfléchir : Impact de l’électrolyse dans la vie quotidienne. 
+\end{itemize}
+
+\section{Consignes de Sécurité}
+\begin{itemize}
+    \item Manipuler Br\(_{2}\) et Cl\(_{2}\) sous ventilation.
+    \item Porter des lunettes et gants.
+    \item Éliminer les déchets chimiques correctement.
+\end{itemize}
+
+
+
+\end{document}

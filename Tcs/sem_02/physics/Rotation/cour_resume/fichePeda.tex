@@ -1,0 +1,244 @@
+\documentclass[12pt]{article}
+%\usepackage{array}
+
+\usepackage[a4paper, margin=.29in]{geometry}
+\usepackage{graphicx, subfig, wrapfig, makecell,fancyhdr,xcolor }
+\newcommand\headerMe[2]{\noindent{}#1\hfill#2}
+\renewcommand \thesection{\Roman{section}}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\definecolor{lightgray}{rgb}{0.9,0.9,0.9}
+\definecolor{lightblue}{rgb}{0.8,0.85,1.0}
+\newcolumntype{M}[1]{>{\raggedright}m{#1}}
+
+\chead{\includegraphics[width = 0.1\textwidth]{./img/logoMin.png}}
+\cfoot{helllo}
+
+\begin{document}
+
+\begin{center}
+\includegraphics[width = 0.18\textwidth]{./img/logoMin.png}
+\vspace{-3cm}
+\end{center}
+\headerMe{Matière : Physique-Chimie}{Établissement : \emph{Lycée SKHOR qualifiant}}\\
+\headerMe{ Unité : La Mécanique }{  Professeur :\emph{Zakaria Haouzan}}\\
+\headerMe{Niveau : 2BAC-SM-X}{Heure : 5H}\\
+
+\begin{center}
+	%\vspace{1cm}
+\underline{Leçon N°4.3: Équilibre d’un solide en rotation autour
+d’un axe fixe}\\
+Durée 5h00
+\\
+    \vspace{.2cm}
+\hrulefill
+\Large{Fiche Pédagogique}
+\hrulefill\\
+\end{center}
+%end Headerss------------------------
+
+
+%__________________Chimie ______________________-
+%%%%%%%+_+_+_+_+_+_+_+_+_Partie1
+
+\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+\hline
+\rowcolor{lightblue}
+  \textbf{Prérequis} & \textbf{Compétences visées}& \textbf{Savoir et savoir-faire} & \textbf{Outils didactiques} \\
+\hline
+\hline
+\begin{itemize}[leftmargin=*]
+\item Notion de force et de vecteur force
+\item Principe fondamental de la dynamique
+\item Conditions d'équilibre d'un solide soumis à des forces
+\item Notion d'axe de rotation
+\end{itemize}
+&
+\begin{itemize}[leftmargin=*]
+\item Relier les phénomènes de la vie quotidienne aux concepts de moment de force et d'équilibre de rotation
+\item Résoudre un problème en rapport avec l'équilibre d'un solide en rotation
+\item Utiliser la méthode scientifique pour analyser des problèmes liés à l'équilibre de rotation
+\item Acquisition d'une méthodologie d'analyse des systèmes en équilibre
+\end{itemize} 
+&
+\begin{itemize}[leftmargin=*]
+\item Identifier les forces qui provoquent une rotation d'un solide autour d'un axe fixe
+\item Calculer le moment d'une force par rapport à un axe
+\item Appliquer le théorème des moments pour déterminer l'équilibre d'un solide en rotation
+\item Comprendre et calculer le moment d'un couple de forces
+\item Comprendre le phénomène de torsion et le couple de torsion
+\end{itemize}
+&
+\begin{itemize}[leftmargin=*]
+\item Porte sur charnière (pour démonstration)
+\item Pendule de torsion
+\item Différents leviers et systèmes en rotation
+\item Dynamomètres
+\item Règles graduées pour mesurer les distances
+\item Simulation informatique (si disponible)
+\end{itemize}
+
+  \\
+\hline
+\end{tabular}
+%\vspace{1cm}
+
+\begin{center}
+\colorbox{lightblue}{\parbox{15cm}{\centering\textbf{Situation-problème}}}
+\end{center}
+
+\begin{tabular}{|p{16cm}|}
+\hline
+Lorsqu'on veut ouvrir une porte, on constate qu'il est plus facile de la pousser au niveau de la poignée (loin de l'axe de rotation) qu'au niveau des charnières (près de l'axe de rotation). De même, une clé est plus facile à tourner quand on applique une force loin de son axe de rotation.
+
+\begin{enumerate}
+\item Pourquoi est-il plus facile d'ouvrir une porte en poussant sur sa poignée plutôt que près de ses charnières?
+\item Quelles sont les conditions pour qu'une force provoque la rotation d'un solide?
+\item Comment peut-on calculer l'efficacité d'une force à produire une rotation?
+\end{enumerate} \\
+\hline
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{center}
+\colorbox{lightblue}{\parbox{15cm}{\centering\textbf{Déroulement}}}
+\end{center}
+
+\begin{tabularx}{\textwidth}{|p{3.5cm}|X|X|p{2.5cm}|}
+\hline
+\rowcolor{lightgray}
+\textbf{Éléments du cours} & \textbf{Activités de l'enseignant} & \textbf{Activités de l'apprenant} & \textbf{Évaluation} \\
+\hline
+\textbf{I. Effet d'une force sur la rotation d'un solide} & 
+\begin{itemize}[leftmargin=*]
+\item Le professeur pose la situation-problème
+\item Demande aux apprenants de répondre aux questions
+\item Réalise une démonstration avec une porte pour montrer l'effet des forces selon leur point d'application
+\item Fait exercer trois forces différentes sur la porte:
+  \begin{itemize}
+  \item $\vec{F_1}$ parallèle à l'axe
+  \item $\vec{F_2}$ dont la droite d'action coupe l'axe
+  \item $\vec{F_3}$ perpendiculaire à l'axe
+  \end{itemize}
+\end{itemize} & 
+\begin{itemize}[leftmargin=*]
+\item L'apprenant analyse la situation et formule des hypothèses
+\item Observe les effets des différentes forces
+\item Constate que seules certaines forces provoquent une rotation
+\item Constate que l'efficacité dépend de l'intensité et de la position de la force par rapport à l'axe
+\end{itemize} & 
+Évaluation diagnostique \\
+\hline
+
+\textbf{II. Moment d'une force par rapport à un axe} 
+\textbf{1. Définition du moment d'une force} & 
+\begin{itemize}[leftmargin=*]
+\item Introduit la notion de moment d'une force
+\item Présente la formule $M(\vec{F}) = \pm F \cdot d$
+\item Explique le signe du moment selon le sens de rotation
+\item Illustre avec des exemples concrets
+\end{itemize} & 
+\begin{itemize}[leftmargin=*]
+\item Prend note de la définition
+\item Comprend que le moment traduit l'efficacité à produire une rotation
+\item Comprend la convention de signe pour le moment
+\end{itemize} & 
+Évaluation formative \\
+\hline
+
+\textbf{III. Théorème des moments} & 
+\begin{itemize}[leftmargin=*]
+\item Énonce le théorème des moments
+\item Présente les conditions générales d'équilibre d'un solide
+\item Propose des exercices d'application
+\end{itemize} & 
+\begin{itemize}[leftmargin=*]
+\item Note les conditions d'équilibre
+\item Applique le théorème à des cas simples
+\item Résout les exercices proposés
+\end{itemize} & 
+Évaluation formative \\
+\hline
+
+\textbf{IV. Couples de forces}
+\textbf{1. Définition d'un couple de forces}
+\textbf{2. Moment d'un couple de forces} & 
+\begin{itemize}[leftmargin=*]
+\item Définit un couple de forces
+\item Montre que le moment d'un couple est indépendant de l'axe de rotation
+\item Démontre que $M = F \cdot d$ pour un couple
+\end{itemize} & 
+\begin{itemize}[leftmargin=*]
+\item Identifie les caractéristiques d'un couple
+\item Comprend la relation entre le moment et la distance entre les forces
+\item Applique la formule dans des cas pratiques
+\end{itemize} & 
+Évaluation formative \\
+\hline
+
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{|p{3.5cm}|X|X|p{2.5cm}|}
+\hline
+\rowcolor{lightgray}
+\textbf{Éléments du cours} & \textbf{Activités de l'enseignant} & \textbf{Activités de l'apprenant} & \textbf{Évaluation} \\
+\hline
+
+\textbf{V. Couple de torsion} & 
+\begin{itemize}[leftmargin=*]
+\item Présente le pendule de torsion
+\item Explique la relation $M = -C \cdot \theta$
+\item Discute des applications pratiques (dynamomètre de torsion, etc.)
+\end{itemize} & 
+\begin{itemize}[leftmargin=*]
+\item Comprend la proportionnalité entre l'angle de torsion et le moment
+\item Identifie les facteurs influençant la constante de torsion
+\item Note les applications pratiques
+\end{itemize} & 
+Évaluation sommative \\
+\hline
+\end{tabularx}
+
+\vspace{1cm}
+
+\begin{center}
+\colorbox{lightblue}{\parbox{15cm}{\centering\textbf{Conclusion et évaluation}}}
+\end{center}
+
+\begin{tabular}{|p{16cm}|}
+\hline
+\begin{itemize}[leftmargin=*]
+\item Synthèse des concepts clés vus durant la leçon
+\item Exercices d'application sur le calcul des moments et l'équilibre en rotation
+\item Évaluation sommative sur l'ensemble des notions abordées
+\end{itemize} \\
+\hline
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{center}
+\colorbox{lightblue}{\parbox{15cm}{\centering\textbf{Prolongement}}}
+\end{center}
+
+\begin{tabular}{|p{16cm}|}
+\hline
+\begin{itemize}[leftmargin=*]
+\item Étude de l'équilibre des solides en translation et en rotation
+\item Applications aux machines simples (leviers, poulies, engrenages)
+\item Étude du moment d'inertie et de la dynamique de rotation
+\end{itemize} \\
+\hline
+\end{tabular}
+
+
+
+\end{document}

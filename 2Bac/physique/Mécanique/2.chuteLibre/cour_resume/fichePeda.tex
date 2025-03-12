@@ -1,0 +1,288 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=.20in]{geometry}
+%\usepackage{array}
+\usepackage{graphicx, subfig, wrapfig, makecell,fancyhdr,xcolor }
+\newcommand\headerMe[2]{\noindent{}#1\hfill#2}
+\renewcommand \thesection{\Roman{section}}
+
+\newcolumntype{M}[1]{>{\raggedright}m{#1}}
+
+\chead{\includegraphics[width = 0.1\textwidth]{./img/logoMin.png}}
+\cfoot{helllo}
+
+\begin{document}
+
+\begin{center}
+	\includegraphics[width = 0.18\textwidth]{./img/logoMin.png}
+	\vspace{-3cm}
+\end{center}
+\headerMe{Matière : Physique-Chimie}{Établissement : \emph{Lycée SKHOR qualifiant}}\\
+\headerMe{ Unité : Electricité}{  Professeur :\emph{Zakaria Haouzan}}\\
+\headerMe{Niveau : 2BAC-SM-PC}{Heure : 6H}\\
+
+\begin{center}
+	%\vspace{1cm}
+	\underline{Leçon N°2: Application des lois de Newton - Chute verticale des solides}\\
+	Durée 5h00
+	\\
+	\vspace{.2cm}
+	\hrulefill
+	\Large{Fiche Pédagogique}
+	\hrulefill\\
+\end{center}
+%end Headerss------------------------
+
+
+%__________________Chimie ______________________-
+%%%%%%%+_+_+_+_+_+_+_+_+_Partie1
+\begin{center}
+	\begin{tabular}{|p{0.2\textwidth}||p{0.3\textwidth}||p{0.3\textwidth}||p{0.1\textwidth}|}
+		\hline
+		\textbf{Prérequis} & \textbf{Compétences visées }     & \textbf{Savoir et savoir-faire} & \textbf{Outils didactiques } \\
+		\hline
+    \begin{itemize}
+  \item Connaissances des concepts fondamentaux de la mécanique
+  \item Compréhension des vecteurs
+  \item Notions mathématiques de base (équations différentielles)
+  \item Familiarité avec les lois de Newton
+\end{itemize
+				                   &
+		- Comprendre le fonctionnement d’un condensateur.
+
+		- Étudier la charge et la décharge d’un condensateur dans un circuit RC.
+
+		- Analyser l’équation différentielle régissant la charge et la décharge.
+
+		- Interpréter graphiquement les phénomènes transitoires dans un dipôle RC.
+
+		-Acquisition d'une
+		méthodologie de recherche
+		Méthodologie d'action Autoapprentissage
+
+		                   &
+
+		-Décrire le rôle d’un condensateur dans un circuit RC.
+
+ - Réaliser un montage RC pour observer la charge et la décharge du condensateur.
+
+ - Tracer graphiquement la variation de la tension  et déterminer graphiquement la constante de temps.
+
+ - Calculer la charge, la tension, et la constante de temps pour un circuit donné.
+
+    - Interpréter les régimes transitoires et permanents dans un circuit RC.
+
+    & 
+    - Générateur de tension continue.
+
+    - Condensateurs de différentes capacités 
+
+    -   Multimètre pour mesurer la tension et l’intensité.
+
+    - Oscilloscope pour visualiser les variations de tension en fonction du temps.
+
+
+    \\
+		\hline
+	\end{tabular}
+\end{center}
+\section*{Situation-problème :}
+
+Lorsqu'un appareil photo est utilisé, le flash nécessite une grande quantité d'énergie en un temps très court. Cette énergie ne peut pas être fournie directement par la pile ou la batterie. Un condensateur est alors utilisé pour stocker l'énergie nécessaire avant de la libérer rapidement.
+
+\begin{enumerate}
+  \item Comment un condensateur peut-il stocker de l’énergie électrique ?
+  \item Comment la charge et la décharge du condensateur influencent-elles le fonctionnement d’un circuit ?
+  \item Quels paramètres du circuit RC influencent le temps nécessaire à la charge et à la décharge ?
+\end{enumerate}
+
+\begin{center}
+	\begin{tabular}{|p{0.2\textwidth}||p{0.3\textwidth}||p{0.3\textwidth}||p{0.1\textwidth}|}
+		\hline
+		\multicolumn{4}{|c|}{Déroulement}                                                                  \\\hline
+		Eléments du                 & \multicolumn{2}{c||}{Activités didactiques} &                        \\\cline{2-3}
+		cours                       & Enseignant                                  & Apprenant & Evaluation \\\hline
+
+		\color{red}{I-Introduction
+
+    vspace{1cm}
+    1. Le condensateur : (Définition )
+    } &
+		-Le professeur pose la situation-problème.
+
+		-Demande aux apprenants de répondre aux questions de la situation-problème.
+
+		-Ecrire les hypothèses proposées par les apprenants.
+
+		-Garde les hypothèses convenues pour vérifier pendant
+		du cours.
+
+    -Donner des exemples d’utilisation : flash d’appareil photo, circuits électroniques.
+Montrer un condensateur réel en classe.
+
+-Montrer un condensateur réel en classe.
+
+-Dessiner un condensateur avec ses armatures et son diélectrique.
+
+-Poser des questions :
+"Pourquoi utilise-t-on un isolant entre les armatures ?"
+"Quelles formes peuvent avoir les armatures ?"
+
+		                            &
+		-L’apprenant analyse la situation déclenchante
+		et formule des hypothèses.
+    Noter la définition et les exemples.
+
+		\textbf{Exemple des hypothèses attendues :}
+
+    -Répondre aux questions
+    Q1 : "Quelles substances peuvent servir de diélectrique ?"
+
+R1 : Air, verre, plastique, papier paraffiné.
+
+Q2 : "Quel rôle joue un condensateur dans un circuit ?"
+
+R2 : Stocker et restituer de l’énergie électrique.
+
+
+
+		                            &
+		Evaluation
+		diagnostique      \\\hline
+
+
+		%II- partie 2 
+		\color{red}{II Charge et décharge d’un condensateur :}
+
+		\vspace{0.5cm}
+		\color{blue}1  Charge d’un condensateur: Expérience 
+		\vspace{0.5cm}
+
+		\color{blue}2 Décharge d’un condensateur: Expérience
+
+		\vspace{0.5cm}
+		\color{blue}3 Relation entre la charge et l’intensité du courant :	
+		                            &
+
+    Réaliser le montage avec un générateur, un condensateur, un interrupteur et un voltmètre.
+
+    Expliquer le phénomène :
+
+    Lorsqu’on ferme l’interrupteur, les électrons s’accumulent sur une armature, créant une tension
+
+ - Décharge du Condensateur :
+
+- Basculer l’interrupteur pour connecter les deux armatures.
+
+ -Montrer que les électrons reviennent à leur position initiale, entraînant une annulation de la tension.
+Questions :
+
+ - "Comment évolue l’intensité du courant lors de la charge ?"
+
+- Réponse : Elle diminue progressivement jusqu’à zéro.
+
+- "Pourquoi la tension reste constante après la charge ?"
+
+- Réponse : Le condensateur conserve sa charge même lorsqu’il est déconnecté.
+
+
+
+&
+Observer les expériences et noter les résultats.
+
+Compléter un tableau de tension et courant mesurés.
+
+Répondre aux questions et proposer des hypothèses sur les phénomènes observés.
+
+
+		                            &
+		Évaluation formative
+\\\hline
+
+		\color{red}{II Association des condensateurs 
+
+    \vspace{1cm}
+
+    1. Association en parallèle
+
+    2. Association en série :
+    }
+& 
+
+Dessiner le schéma d’un montage en parallèle .
+
+Expliquer le schéma et la demonstration 
+
+Exemple Numérique et pratique.
+
+& 
+Noter la formule et l’exemple.
+
+Répondre aux questions posées.
+
+Proposer d’autres applications concrètes de l’association en parallèle (ex. : circuits de filtrage).
+& 
+Exercice
+
+
+	\end{tabular}
+\end{center}
+
+%Page 3 in parte 2
+
+\begin{center}
+	\begin{tabular}{|p{0.2\textwidth}||p{0.3\textwidth}||p{0.3\textwidth}||p{0.1\textwidth}|}
+		\hline
+		\multicolumn{4}{|c|}{Déroulement}                                                  \\\hline
+		Eléments du & \multicolumn{2}{c||}{Activités didactiques} &                        \\\cline{2-3}
+		cours       & Enseignant                                  & Apprenant & Evaluation \\\hline
+
+
+		            &
+
+Questions Guidées :
+
+"Pourquoi associer des condensateurs en parallèle dans un circuit ?"
+
+Réponse attendue : Augmenter la capacité totale pour stocker plus d’énergie.
+
+"Que se passe-t-il si un condensateur est défectueux dans une association en parallèle ?"
+
+Réponse attendue : Les autres condensateurs continuent de fonctionner, mais la capacité totale diminue.
+
+
+Dessiner le schéma d’un montage en série
+
+Expliquer :
+"L’association en série diminue la capacité totale, car les condensateurs partagent la charge et augmentent la tension totale."
+
+Questions Guidées :
+
+"Pourquoi associer des condensateurs en série dans un circuit ?"
+
+Réponse attendue : Pour diminuer la capacité totale ou supporter une tension plus élevée.
+
+"Que se passe-t-il si un condensateur est défectueux dans une association en série ?"
+
+Réponse attendue : L’ensemble du circuit est interrompu, car le courant ne peut plus circuler.
+
+
+		            &
+
+Noter la formule et l’exemple.
+
+Répondre aux questions posées.
+
+Résoudre des exercices supplémentaires sur les associations en série.
+		            &
+		Évaluation formative                                                               \\\hline
+
+
+	\end{tabular}
+\end{center}
+
+
+
+
+
+
+\end{document}

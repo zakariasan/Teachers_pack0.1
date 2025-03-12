@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1.5cm}
+
+\title{Leçon N°9 : Applications : Production d’ondes électromagnétiques et communication}
+\author{Votre Nom}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+
+Depuis toujours, l’Homme a cherché à transmettre des messages le plus rapidement et le plus loin possible. Des méthodes primitives comme les signaux de fumée ou les pigeons voyageurs ont évolué vers des technologies modernes comme la radio, la télévision, et Internet. Dans ce chapitre, nous allons étudier comment les informations peuvent être transmises à travers le monde, voire dans l’espace, et pourquoi il est nécessaire de coder et décoder l’information pour la transmettre efficacement.
+
+La transmission rapide d’informations sans fil repose sur l’utilisation d’ondes électromagnétiques, appelées \textbf{ondes porteuses}, sur lesquelles on "greffe" l’information à transmettre. Ce processus s’appelle la \textbf{modulation}.
+
+\section{Les ondes électromagnétiques - Transmission d’informations}
+
+\subsection{Définition des ondes électromagnétiques}
+
+Une onde électromagnétique est composée d’un \textbf{champ électrique} et d’un \textbf{champ magnétique} qui se propagent à la même vitesse. Dans le vide, cette vitesse est égale à la célérité de la lumière : \( c = 3 \times 10^8 \, \text{m/s} \).
+
+Les ondes électromagnétiques n’ont pas besoin de support matériel pour se propager. Elles présentent des phénomènes de \textbf{diffraction}, \textbf{interférence}, \textbf{réflexion} et \textbf{réfraction}, similaires à ceux observés avec la lumière. En effet, la lumière est une onde électromagnétique.
+
+Les ondes hertziennes, utilisées dans la radio, la télévision et la téléphonie mobile, sont également des ondes électromagnétiques.
+
+\subsection{Classification des ondes électromagnétiques}
+
+Les ondes électromagnétiques sont classées en fonction de leur fréquence ou de leur longueur d’onde. Voici quelques exemples :
+
+\begin{itemize}
+    \item \textbf{Ondes radio} : utilisées pour la radio, la télévision, et les communications mobiles.
+    \item \textbf{Micro-ondes} : utilisées pour le Wi-Fi, le Bluetooth, et les fours à micro-ondes.
+    \item \textbf{Infrarouge} : utilisé dans les télécommandes et les systèmes de vision nocturne.
+    \item \textbf{Lumière visible} : utilisée dans les fibres optiques.
+    \item \textbf{Ultraviolet} : utilisé dans les systèmes de stérilisation.
+    \item \textbf{Rayons X} : utilisés en médecine pour l’imagerie.
+    \item \textbf{Rayons gamma} : utilisés en radiothérapie.
+\end{itemize}
+
+\subsection{Utilisations pratiques des ondes électromagnétiques}
+
+Les ondes électromagnétiques ont de nombreuses applications dans la vie quotidienne :
+
+\begin{itemize}
+    \item \textbf{Communication} : radio, télévision, téléphonie mobile (4G/5G), Wi-Fi, Bluetooth.
+    \item \textbf{Navigation} : systèmes GPS.
+    \item \textbf{Médecine} : rayons X pour l’imagerie médicale, IRM.
+    \item \textbf{Énergie} : panneaux solaires (énergie solaire), éoliennes.
+    \item \textbf{Industrie} : radars, systèmes de surveillance, Internet des objets (IoT).
+\end{itemize}
+
+\subsection{Mise en évidence de la présence d’ondes électromagnétiques}
+
+Pour démontrer la propagation des ondes électromagnétiques, on peut utiliser un montage simple avec un émetteur (E) et un récepteur (R). Lorsque l’émetteur génère un signal sinusoïdal, le récepteur capte un signal de même fréquence et forme. Cela montre que l’onde électromagnétique transporte l’information sans transport de matière, à la vitesse de la lumière.
+
+\section{La modulation}
+
+\subsection{Pourquoi moduler ?}
+
+Transmettre un signal de basse fréquence (BF) directement sur de longues distances est inefficace car :
+
+\begin{enumerate}
+    \item Le signal serait rapidement atténué.
+    \item Les antennes nécessaires seraient de très grandes dimensions (la longueur de l’antenne est proportionnelle à la longueur d’onde du signal).
+\end{enumerate}
+
+Par exemple, pour un signal BF de 200 Hz, la longueur d’onde est de 1500 km, ce qui nécessiterait une antenne de 750 km ! En revanche, un signal haute fréquence (HF) peut être transmis avec des antennes de petite taille.
+
+\subsection{Principe de la modulation}
+
+La modulation consiste à superposer un signal de basse fréquence (le \textbf{signal modulant}) sur une onde de haute fréquence (l’\textbf{onde porteuse}). Cela permet de transmettre l’information à une fréquence plus élevée, plus résistante aux perturbations et capable de parcourir de plus grandes distances.
+
+\subsection{Types de modulation}
+
+Il existe trois types principaux de modulation :
+
+\begin{itemize}
+    \item \textbf{Modulation d’amplitude (AM)} : l’amplitude de l’onde porteuse varie en fonction du signal modulant.
+    \item \textbf{Modulation de fréquence (FM)} : la fréquence de l’onde porteuse varie en fonction du signal modulant.
+    \item \textbf{Modulation de phase (PM)} : la phase de l’onde porteuse varie en fonction du signal modulant.
+\end{itemize}
+
+\section{La modulation d’amplitude (AM)}
+
+\subsection{Définition}
+
+La modulation d’amplitude consiste à faire varier l’amplitude de l’onde porteuse en fonction du signal modulant. Le signal modulé est ensuite transmis et, à la réception, il est démodulé pour récupérer le signal d’origine.
+
+\subsection{Montage expérimental}
+
+Un modulateur AM est constitué de deux générateurs (GBF) et d’un multiplieur (composant AD633). Le premier générateur produit le signal modulant (BF), et le second produit l’onde porteuse (HF). Le multiplieur combine les deux signaux pour produire le signal modulé.
+
+\subsection{Expression mathématique du signal modulé}
+
+Le signal modulé \( u(t) \) peut s’exprimer comme suit :
+
+\[
+u(t) = A \left[ m \cdot \cos(2\pi f_s t) + 1 \right] \cdot \cos(2\pi f_p t)
+\]
+
+Où :
+\begin{itemize}
+    \item \( A \) est l’amplitude maximale.
+    \item \( m \) est le taux de modulation (\( m = \frac{S_m}{U_0} \)).
+    \item \( f_s \) est la fréquence du signal modulant.
+    \item \( f_p \) est la fréquence de l’onde porteuse.
+\end{itemize}
+
+\subsection{Qualité de la modulation}
+
+\begin{itemize}
+    \item \textbf{Bonne modulation} : lorsque \( m < 1 \), l’enveloppe du signal modulé correspond parfaitement au signal modulant.
+    \item \textbf{Surmodulation} : lorsque \( m > 1 \), l’enveloppe est déformée, ce qui rend la modulation de mauvaise qualité.
+\end{itemize}
+
+\section{La démodulation}
+
+\subsection{Définition}
+
+La démodulation est le processus qui permet de récupérer le signal modulant à partir du signal modulé. Elle se fait en deux étapes :
+
+\begin{enumerate}
+    \item \textbf{Détection d’enveloppe} : on utilise une diode pour éliminer les alternances négatives du signal.
+    \item \textbf{Filtrage} : on élimine la composante continue pour récupérer le signal modulant.
+\end{enumerate}
+
+\subsection{Montage de démodulation}
+
+Le montage comprend une diode, un filtre passe-bas pour éliminer la porteuse, et un filtre passe-haut pour éliminer la tension continue.
+
+\section{Réalisation d’un récepteur radio AM}
+
+Un récepteur radio AM se compose des éléments suivants :
+
+\begin{itemize}
+    \item \textbf{Antenne} : capte les ondes radio.
+    \item \textbf{Circuit LC} : sélectionne la fréquence de l’onde porteuse.
+    \item \textbf{Amplificateur} : amplifie le signal modulé.
+    \item \textbf{Démodulateur} : récupère le signal modulant.
+\end{itemize}
+
+\section*{Conclusion}
+
+La modulation est une technique essentielle pour la transmission d’informations sur de longues distances. Elle permet de surmonter les limitations des signaux de basse fréquence en les greffant sur des ondes porteuses de haute fréquence. La modulation d’amplitude (AM) est l’une des méthodes les plus simples et les plus utilisées, notamment dans les communications radio.
+
+\end{document}
